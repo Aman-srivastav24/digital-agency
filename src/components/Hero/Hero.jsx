@@ -1,12 +1,12 @@
 import React from "react";
-import yellowCar from "../../assets/website/salesforce.png";
+import yellowCar from "../../assets/website/Salesforce.png";
 import Services from '../Services/Services'
 import { SalesForceTraining } from '../Training/SalesForceTraining'
 import Testimonial from '../Testimonial/Testimonial'
 import { ContactPageTwo } from '../Contact/Contact'
 import { Link } from "react-router-dom";
 import { Consulting } from "../Consulting/Consulting";
-import About from "../About/About";
+
 
 const Hero = () => {
   return (
