@@ -1,6 +1,6 @@
 import React from "react";
 import { FaUserCircle } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 import { MenuLinks } from "./Navbar";
 
 const ResponsiveMenu = ({ showMenu }) => {
@@ -22,12 +22,14 @@ const ResponsiveMenu = ({ showMenu }) => {
           <ul className="space-y-4 text-xl">
             {MenuLinks.map((data) => (
               <li key={data.name}>
-                <a href={data.link} className="mb-5 inline-block">
+                <Link to={data.link} className="mb-5 inline-block">
                   {data.name}
-                </a>
+                </Link>
               </li>
             ))}
-            <button className="primary-btn">Get in Touch</button>
+            <Link to='/contact'>
+             <button className="primary-btn">Get in Touch</button>
+             </Link>
           </ul>
         </nav>
       </div>
