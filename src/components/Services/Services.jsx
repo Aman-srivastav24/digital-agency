@@ -1,47 +1,87 @@
 import React from "react";
-import { FaCameraRetro } from "react-icons/fa";
-import { GiNotebook } from "react-icons/gi";
-import { SlNote } from "react-icons/sl";
+import { MdModelTraining } from "react-icons/md";
+import { MdConnectWithoutContact } from "react-icons/md";
+import { MdInterpreterMode } from "react-icons/md";
+import { GrCertificate } from "react-icons/gr";
+import { CgWebsite } from "react-icons/cg";
+import { FaCode } from "react-icons/fa";
+import { RiPresentationLine } from "react-icons/ri";
+import { FaSalesforce } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const skillsData = [
   {
-    name: "App Development",
-    icon: <FaCameraRetro className="text-4xl text-primary" />,
+    name: "Salesforce Training",
+    icon: <FaSalesforce className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "Comprehensive Salesforce Training: Our extensive programs cover Salesforce Administration, Development, Business Analysis, Data Analysis, Sales, and Consulting. Delivered by industry-renowned trainers.",
+
     aosDelay: "0",
   },
   {
-    name: "Web Designing",
-    icon: <GiNotebook className="text-4xl text-primary" />,
+    name: "Web Development",
+    icon: <CgWebsite className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "Professional website development services to enhance your digital presence. Custom design reflecting your brand identity and user-friendly interface. ",
     aosDelay: "300",
   },
   {
-    name: "Graphic Designing",
-    icon: <SlNote className="text-4xl text-primary" />,
+    name: "Salesforce Implemention",
+    icon: <FaCode className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "Expert guidance for seamless Salesforce integration and implementation tailored to your business needs. Customized configuration and data migration services",
     aosDelay: "500",
   },
   {
-    name: "Digital Marketing",
-    icon: <SlNote className="text-4xl text-primary" />,
+    name: "Staff or Resourcing",
+    icon: <MdModelTraining className="text-4xl text-primary" />,
     link: "#",
     description:
-      "ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod metus vel sem bibendum, a bibendum justo tempor. Sed vel lectus",
+      "We provide staffing solutions to help you find the right talent for your organization. Strategic workforce consulting to streamline HR processes and optimize team performance.",
     aosDelay: "700",
   },
+  {
+    name: "Digital Marketing",
+    icon: <RiPresentationLine className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      "Comprehensive digital marketing services to grow your business online.",
+    aosDelay: "700",
+  },
+  {
+    name: "Certification Support",
+    icon: <GrCertificate className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      " Standalone certification support services to help you achieve your Salesforce certification.",
+    aosDelay: "700",
+  },
+  {
+    name: "Placement Service",
+    icon: <MdConnectWithoutContact className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      "Our professional and trained staff ensures placing the right candidate to the right job. Adept at finding quick and suitable placements for our candidates.",
+    aosDelay: "700",
+  },
+  {
+    name: "Interview Prepration",
+    icon: <MdInterpreterMode className="text-4xl text-primary" />,
+    link: "#",
+    description:
+      "Excel in real job interviews with our mock sessions led by industry professionals. Receive personalized feedback and strategies to enhance your interview performance and confidence.",
+    aosDelay: "700",
+  },
+  
 ];
 const Services = () => {
   return (
     <>
-      <span id="about"></span>
-      <div className="bg-gray-100 dark:bg-black dark:text-white py-12 sm:grid sm:place-items-center">
+      
+      <div className="bg-gray-100 dark:bg-black dark:text-white py-12 sm:grid sm:place-items-center" id="services">
         <div className="container">
           {/* Header */}
           <div className="pb-12 text-center space-y-3">
@@ -55,22 +95,21 @@ const Services = () => {
               data-aos="fade-up"
               className="text-gray-600 dark:text-gray-400 text-sm"
             >
-              We are self-service data analytics software that lets you create
-              visually.
+              We provide training and Development
             </p>
           </div>
 
           {/* services cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 ">
             {skillsData.map((skill) => (
               <div
                 key={skill.name}
                 data-aos="fade-up"
                 data-aos-delay={skill.aosDelay}
-                className="card space-y-3 sm:space-y-4 p-4"
+                className="card space-y-3 sm:space-y-4 p-4 border-[1px] border-gray-600 rounded-lg shadow-lg "
               >
                 <div>{skill.icon}</div>
-                <h1 className="text-lg font-semibold">{skill.name}</h1>
+              <Link to="/contact"> <h1 className="text-[20px] font-semibold cursor-pointer hover:scale-110">{skill.name}</h1></Link> 
                 <p className="text-gray-600 dark:text-gray-400">
                   {skill.description}
                 </p>
@@ -78,15 +117,7 @@ const Services = () => {
             ))}
           </div>
 
-          {/* button */}
-          <div
-            data-aos="fade-up"
-            data-aos-delay="900"
-            data-aos-offset="0"
-            className="text-center mt-4 sm:mt-8"
-          >
-            <button className="primary-btn">Learn More</button>
-          </div>
+        
         </div>
       </div>
     </>

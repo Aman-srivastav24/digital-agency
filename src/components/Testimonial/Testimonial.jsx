@@ -1,31 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
-
-const testimonialData = [
-  {
-    id: 1,
-    name: "David Calathan - Director of Design Operations, New York",
-    text: "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be.",
-    img: "https://picsum.photos/101/101",
-  },
-  {
-    id: 1,
-    name: "David Calathan - Director of Design Operations, New York",
-    text: "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be.",
-    img: "https://picsum.photos/102/102",
-  },
-  {
-    id: 1,
-    name: "Smith - Director of Operations, New York",
-    text: "The results have been incredible. With Power Digital, it feels like they’re in our trench, supporting and understanding us. They’re like a partner and mentor in helping us get where we want to be.",
-    img: "https://picsum.photos/103/103",
-  },
-];
+import testimonialData from '../../../data.json';
+import TestimonialSuccess from "./TestimonialSucess";
 
 const Testimonial = () => {
   var settings = {
     dots: true,
-    arrows: false,
+    arrows: true,
     infinite: true,
     speed: 600,
     slidesToShow: 1,
@@ -39,25 +20,39 @@ const Testimonial = () => {
   return (
     <>
       <div className="py-10">
-        <div className="container">
+        <div className="container ">
           {/* testimonial section */}
           <div
             data-aos="fade-up"
             className="grid grid-cols-1 max-w-screen-xl mx-auto gap-6"
           >
+              <div className="pb-12 text-center space-y-1">
+            <h1
+              data-aos="fade-up"
+              className="text-3xl font-semibold sm:text-3xl text-violet-950 dark:text-primary"
+            >
+              What Our Client Say
+            </h1>
+            <p
+              data-aos="fade-up"
+              className="text-gray-600 dark:text-gray-400 text-sm"
+            >
+              Happy With us
+            </p>
+          </div>
             <Slider {...settings}>
-              {testimonialData.map(({ id, name, text, img }) => {
+              {testimonialData.testimonialData.map(({ id, name, text, img }) => {
                 return (
                   <div key={id} className="my-6">
                     {/* card */}
-                    <div className="flex flex-col sm:flex-row gap-5 md:gap-14 p-4 mx-4 rounded-xl dark:bg-gray-800 relative">
+                    <div className="flex flex-col sm:flex-row gap-5 md:gap-14 p-4 mx-4 rounded-xl dark:bg-gray-800 bg-gray-600 relative">
                       <img
                         src={img}
                         alt=""
                         className="block mx-auto h-[300px] w-full sm:w-[200px] object-cover"
                       />
                       <div className="space-y-4">
-                        <p className="text-gray-500 text-black/80 dark:text-white/80 xl:pr-40">
+                        <p className="text-gray-200 text-black/80 dark:text-white/80 xl:pr-40">
                           “{text}”
                         </p>
                         <h1 className="text-xl font-bold">{name}</h1>
@@ -73,6 +68,7 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
+      <TestimonialSuccess/>
     </>
   );
 };

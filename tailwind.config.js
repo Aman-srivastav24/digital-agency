@@ -4,6 +4,9 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('./assets/blog/forest-5375005_1280.jpg')"
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
       },

@@ -1,0 +1,55 @@
+{
+    "testimonialData": [
+      {
+        "id": 1,
+        "name": "Alex R., CEO",
+        "text": "Cloversal’s staffing and resourcing solutions have been instrumental in finding the right talent for our projects. Their understanding of our needs and the quality of candidates they provide are unparalleled.",
+        "img": "https://picsum.photos/101/101"
+      },
+      {
+        "id": 2,
+        "name": "Emily J., Data Analyst",
+        "text": "The Salesforce data analysis training at Cloversal was incredibly thorough. The real-time projects and expert instruction gave me the confidence to tackle complex data challenges. I highly recommend their programs.",
+        "img": "https://picsum.photos/102/102"
+      },
+      {
+        "id": 3,
+        "name": "Ryan S., Marketing Manager",
+        "text": "Cloversal’s certification support services were top-notch. The personalized study plans and mock exams were crucial in helping me pass my certification exam. The trainers were always available to answer my questions and provide guidance.",
+        "img": "https://picsum.photos/103/103"
+      }
+    ],
+    "testimonialSuccess": [
+      {
+        "id": 1,
+        "name": "John D., Salesforce Administrator",
+        "text": "Cloversal’s training program was a game-changer for my career. The comprehensive curriculum and hands-on projects equipped me with the skills Ineeded to excel. Thanks to their expert guidance, I passed my Salesforce certification on the first try!",
+        "img": "https://picsum.photos/101/101"
+      },
+      {
+        "id": 2,
+        "name": "Michael T., Digital Marketing Specialist",
+        "text": "Cloversal’s digital marketing services transformed our online presence. Their strategic approach and expertise in SEO and PPC campaigns significantly boosted our traffic and conversions. We couldn’t be happier with the results.",
+        "img": "https://picsum.photos/102/102"
+      },
+      {
+        "id": 3,
+        "name": "Sarah M., Business Analyst ",
+        "text": "Joining Cloversal was the best decision I made for my professional growth. The practical training and real-world scenarios provided invaluable experience. The resume-building and interview preparation services helped me secure my dream job!.",
+        "img": "https://picsum.photos/103/103"
+      },
+      {
+        "id": 4,
+        "name": "Lisa K., Project Manager ",
+        "text": "The Salesforce implementation services from Cloversal were outstanding. Their team’s professionalism and deep knowledge ensured a seamless integration.Our productivity has soared, and we’ve seen a remarkable improvement in our processes..",
+        "img": "https://picsum.photos/103/103"
+      },
+      {
+        "id": 5,
+        "name": "David , Web Developer ",
+        "text": "Working with Cloversal’s web development team was a fantastic experience. They delivered a beautifully designed, user-friendly website that exceeded our expectations. Their attention to detail and responsiveness were commendable.",
+        "img": "https://picsum.photos/103/103"
+      }
+    ]
+  }
+   

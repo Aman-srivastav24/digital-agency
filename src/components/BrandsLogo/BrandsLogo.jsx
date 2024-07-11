@@ -9,7 +9,7 @@ const BrandsLogo = () => {
   return (
     <>
       <div className="container mb-12 mt-12 sm:mt-0">
-        <h1 className="text-center">Powering next-gen companies</h1>
+        <h1 className="text-3xl mt-8 text-center font-semibold sm:text-3xl text-violet-950 dark:text-primary">Our Happy - Clients</h1>
         <div className="py-6 md:px-32 flex flex-wrap items-center justify-evenly gap-3">
           <img src={Brand1} alt="" />
           <img src={Brand2} alt="" />

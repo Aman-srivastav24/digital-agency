@@ -16,7 +16,6 @@ const ResponsiveMenu = ({ showMenu }) => {
           <FaUserCircle size={50} />
           <div>
             <h1>Hello User</h1>
-            <h1 className="text-sm text-slate-500">Premium user</h1>
           </div>
         </div>
         <nav className="mt-12">
@@ -28,12 +27,13 @@ const ResponsiveMenu = ({ showMenu }) => {
                 </a>
               </li>
             ))}
+            <button className="primary-btn">Get in Touch</button>
           </ul>
         </nav>
       </div>
       <div className="footer">
         <h1>
-          Made with ❤ by <a href="https://dilshad-ahmed.github.io/">Dilshad</a>{" "}
+          Cloversal 
         </h1>
       </div>
     </div>

@@ -1,9 +1,16 @@
 import React from "react";
-import yellowCar from "../../assets/website/team.png";
+import yellowCar from "../../assets/website/salesforce.png";
+import Services from '../Services/Services'
+import { SalesForceTraining } from '../Training/SalesForceTraining'
+import Testimonial from '../Testimonial/Testimonial'
+import { ContactPageTwo } from '../Contact/Contact'
+import { Link } from "react-router-dom";
+import { Consulting } from "../Consulting/Consulting";
+import About from "../About/About";
 
 const Hero = () => {
   return (
-    <div className="dark:bg-gray-950 dark:text-white duration-300 ">
+    <div className="dark:bg-gray-950 dark:text-white duration-300 " id="">
       <div className="container min-h-[620px] flex mt-10 sm:mt-0">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 place-items-center">
           {/* Image section */}
@@ -11,16 +18,14 @@ const Hero = () => {
             <img
               src={yellowCar}
               alt=""
-              className="w-full sm:max-w-[280px] md:max-w-[430px]"
+              className="w-full sm:max-w-[280px] md:max-w-[530px] rounded-lg"
             />
             <div
               data-aos="slide-right"
-              className="absolute -bottom-5 -right-8 px-4 py-2 rounded-xl bg-white dark:bg-gray-900 dark:text-white shadow-md"
+              className="absolute -bottom-5 -right-8  px-4 py-2 rounded-xl bg-white dark:bg-gray-900 dark:text-white shadow-md"
             >
-              <p className="text-gray-500 text-sm ">⭐Projects</p>
-              <h1 className="font-bold">
-                600+ <span className="font-normal">Done</span>
-              </h1>
+              <p className="text-gray-500 text-sm ">⭐We Provide</p>
+              <h1 className="font-bold">Salesforce Training</h1>
             </div>
           </div>
 
@@ -31,26 +36,39 @@ const Hero = () => {
               className="text-4xl sm:text-5xl font-semibold"
               style={{ lineHeight: 1.2 }}
             >
-              Building Brands in the{" "}
-              <span className="text-primary">Digital Agency</span>
+              Welcome To{" "}
+              <span className="text-primary font-bold">Cloversal</span>
             </h1>
             <p data-aos="fade-up" data-aos-delay="300">
-              Your partner in navigating the ever-evolving landscape of digital
-              marketing. From conceptualization to execution, we craft tailored
-              solutions that drive results and elevate your brand to new
-              heights.
+              Your comprehensive solution for Salesforce training and a suite of
+              professional services designed to propel your career and business
+              forward.
             </p>
-            <button
-              data-aos="fade-up"
-              data-aos-delay="500"
-              data-aos-offset="0"
-              className="primary-btn"
-            >
-              Learn More
-            </button>
+            <p data-aos="fade-up" data-aos-delay="300">
+              Ready to take the next step in your career? Enroll now and start
+              with a free demo class! Discover why Cloversal is the preferred
+              choice for Salesforce training and a range of professional
+              services.
+            </p>
+            <Link to="/contact">
+              <button
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-offset="0"
+                className="primary-btn m-4"
+              >
+                Join Us
+              </button>
+            </Link>
           </div>
         </div>
       </div>
+    
+      <Services />
+      <SalesForceTraining />
+      <Consulting/>
+      <Testimonial />
+      <ContactPageTwo />
     </div>
   );
 };

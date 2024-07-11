@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+const currentYear = new Date().getFullYear();
 
 const FooterLinks = [
   {
@@ -7,12 +8,8 @@ const FooterLinks = [
     link: "/#about",
   },
   {
-    title: "Features",
+    title: "Services",
     link: "/#features",
-  },
-  {
-    title: "Works",
-    link: "/#works",
   },
   {
     title: "Career",
@@ -37,34 +34,37 @@ const HelpLinks = [
     link: "/#policy",
   },
 ];
-const ResourcesLinks = [
+const contact = [
   {
-    title: "Free Ebooks",
-    link: "/#ebooks",
+    title: "info@cloversal.com.",
+    link: "/#blogs",
   },
+
   {
-    title: "How To Blog",
+    title: "+91 - 8240689427",
     link: "/#blogs",
   },
   {
-    title: "Subscribe TCJ",
-    link: "https://www.youtube.com/channel/UC1H-a1MKEFXRiFlGNLcy7gQ?sub_confirmation=1",
+    title: "+971 - 505852966",
+    link: "/#blogs",
   },
 ];
 const Footer = () => {
   return (
-    <div className="bg-dark text-white">
+    <div className="bg-dark text-white mt-4">
       <section className="container py-10">
         <div className=" grid md:grid-cols-3 py-5">
           {/* company Details */}
           <div className=" py-8 px-4 ">
             <h1 className="sm:text-3xl text-xl font-bold sm:text-left text-justify mb-3 flex items-center gap-3">
-              Digital Agency
+              Cloversal
             </h1>
             <p className="text-sm">
-              Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit consectetur adipisicing elit ipsum
-              dolor sit amet consectetur. adipisicing{" "}
+              At Cloversal, our mission is to provide top-tier training and
+              services that empower individuals and organizations to thrive in
+              today’s competitive landscape. We are dedicated to offering
+              unparalleled Salesforce training and a range of additional
+              services to meet your diverse needs.{" "}
             </p>
             <br />
             {/* Social Handle */}
@@ -119,10 +119,10 @@ const Footer = () => {
             <div className="">
               <div className="py-8 px-4 ">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Resources
+                  Contact
                 </h1>
                 <ul className="flex flex-col gap-3">
-                  {ResourcesLinks.map((link) => (
+                  {contact.map((link) => (
                     <li
                       key={link.title}
                       className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-400 "
@@ -135,7 +135,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <p className="text-center">Copyright@ Cloversal {currentYear} |
+        All Right Reserved</p>
       </section>
+      
     </div>
   );
 };
