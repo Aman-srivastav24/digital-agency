@@ -26,16 +26,22 @@ const features = [
     icon: MdAnalytics,
   },
   {
-    name: ' Salesforce Sales and Service Cloud',
+    name: ' Salesforce QA',
     description:
       'Learn to leverage Salesforce CRM tools for effective sales management and customer service delivery',
     icon: MdCloudSync,
   },
   {
-    name: ' Salesforce Consulting',
+    name: ' Salesforce Project Manager',
     description:
       'Gain expertise in solution architecture, implementation strategies, and client advisory to drive business success',
     icon: MdOutlineContacts,
+  },
+  {
+    name: 'Salesforce Architect',
+    description:
+      'Acquire skills in requirement gathering, process mapping, and stakeholder management to deliver effective Salesforce solutions.',
+    icon: MdBusiness,
   },
 ]
 

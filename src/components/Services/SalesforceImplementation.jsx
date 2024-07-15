@@ -7,6 +7,7 @@ import cpq from "../../assets/website/cpq.jpg"
 import fsl from "../../assets/website/fsl.jpg"
 import einstein from "../../assets/website/Einstein.png"
 import mulesoft from "../../assets/website/mulesoft.png"
+import { Link } from "react-router-dom";
 function SalesforceImplementation() {
   const cloud = [
     {
@@ -72,12 +73,12 @@ function SalesforceImplementation() {
             </div>
             <div class="w-full px-4 lg:w-1/2">
               <div class="text-center lg:text-right" data-aos="fade-up">
-                <a
+                <Link
                   class="font-semibold rounded-lg mx-auto inline-flex items-center justify-center dark:bg-gray-900 bg-black text-white py-4 px-9 hover:bg-opacity-90"
-                  href="#"
+                  to="/contact"
                 >
                   Try Now
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -310,7 +311,7 @@ function SalesforceImplementation() {
                 <span class="block font-semibold text-xl">{cloud.title}</span>
 
                 <span class="block opacity-75 -mb-1">{cloud.desc}</span>
-                <button className="primary-btn mt-4">Enquiry Now</button>
+              <Link to="/contact">  <button className="primary-btn mt-4">Enquiry Now</button></Link>
               </div>
             </div>
           ))}
@@ -335,7 +336,7 @@ function SalesforceImplementation() {
                 <span class="block font-semibold text-xl">{product.title}</span>
 
                 <span class="block opacity-75 -mb-1">{product.desc}</span>
-                <button className="primary-btn mt-4">Enquiry Now</button>
+               <Link to="/contact"><button className="primary-btn mt-4">Enquiry Now</button></Link> 
               </div>
             </div>
           ))}
