@@ -1,7 +1,5 @@
-import React from 'react'
-import city from '../../assets/blog/architecture-1868667_1280.jpg'
-
-
+import React from 'react';
+import city from '../../assets/blog/architecture-1868667_1280.jpg';
 
 const locations = [
   {
@@ -9,31 +7,25 @@ const locations = [
     timings: 'Mon-Sat 9am to 5pm.',
     address: '7/2, Federal Colony, Phulwari, Patna',
   },
-  
-]
+];
 
 export function ContactPageTwo() {
-  
-
   return (
-    <div >
-      
+    <div>
       <div className="mx-auto max-w-7xl px-4" id='contact'>
         <div className="mx-auto max-w-7xl py-12 md:py-24">
-          <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2" >
-            {/* contact from */}
+          <div className="grid items-center justify-items-center gap-x-4 gap-y-10 lg:grid-cols-2">
+            {/* contact form */}
             <div className="flex items-center justify-center" data-aos="zoom-in">
               <div className="px-2 md:px-12">
-                <p className="text-2xl font-bold text-gray-400 md:text-4xl" >Get in touch</p>
+                <p className="text-2xl font-bold text-gray-400 md:text-4xl">Request a Call</p>
                 <p className="mt-4 text-lg text-gray-600">
-                At Cloversal, your journey to success is our top priority. Whether you have inquiries about our Salesforce training programs, professional services, or want to explore potential collaborations, our dedicated team is here to assist you.
-
+                  At Cloversal, your journey to success is our top priority. Whether you have inquiries about our Salesforce training programs, professional services, or want to explore potential collaborations, our dedicated team is here to assist you.
                 </p>
-                <p>Connect with Cloversal
-                </p>
+                <p>Connect with Cloversal</p>
                 <form action="" className="mt-8 space-y-4">
                   <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
-                    <div className="grid w-full  items-center gap-1.5">
+                    <div className="grid w-full items-center gap-1.5">
                       <label
                         className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                         htmlFor="first_name"
@@ -47,7 +39,7 @@ export function ContactPageTwo() {
                         placeholder="First Name"
                       />
                     </div>
-                    <div className="grid w-full  items-center gap-1.5">
+                    <div className="grid w-full items-center gap-1.5">
                       <label
                         className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                         htmlFor="last_name"
@@ -62,7 +54,7 @@ export function ContactPageTwo() {
                       />
                     </div>
                   </div>
-                  <div className="grid w-full  items-center gap-1.5">
+                  <div className="grid w-full items-center gap-1.5">
                     <label
                       className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                       htmlFor="email"
@@ -76,7 +68,7 @@ export function ContactPageTwo() {
                       placeholder="Email"
                     />
                   </div>
-                  <div className="grid w-full  items-center gap-1.5">
+                  <div className="grid w-full items-center gap-1.5">
                     <label
                       className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                       htmlFor="phone_number"
@@ -90,7 +82,28 @@ export function ContactPageTwo() {
                       placeholder="Phone number"
                     />
                   </div>
-                  <div className="grid w-full  items-center gap-1.5">
+                  <div className="grid w-full drak:text-white items-center gap-1.5">
+                    <label
+                      className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                      htmlFor="reason"
+                    >
+                      Intrested In
+                    </label>
+                    <select
+                      className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-500 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                      id="reason"
+                      defaultValue=""
+                    >
+                      <option value="" disabled>Select a reason</option>
+                      <option value="training">Salesforce Training</option>
+                      <option value="training">Salesforce Corporate Training</option>
+                      <option value="development">Website Development</option>
+                      <option value="consultation">Consultation</option>
+                      <option value="consultation">Job Enquiry</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div className="grid w-full items-center gap-1.5">
                     <label
                       className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                       htmlFor="message"
@@ -136,24 +149,19 @@ export function ContactPageTwo() {
                     key={location.title}
                     className="flex flex-col space-y-2 pt-4 first:pt-0 lg:w-full"
                   >
-                    <p className="w-full text-xl font-semibold  text-gray-900">{location.title}</p>
-                    <p className="w-full text-base  text-gray-600">{location.timings}</p>
+                    <p className="w-full text-xl font-semibold text-gray-900">{location.title}</p>
+                    <p className="w-full text-base text-gray-600">{location.timings}</p>
                     <p className="text-sm font-semibold text-gray-600">{location.address}</p>
                   </div>
                 ))}
-                <p className="w-full text-[15px] font-semibold  text-gray-900">Phone - India +91 - 8240689427
-                </p>
-                <p className="w-full text-[15px] font-semibold  text-gray-900">Phone - UAE +971 - 505852966</p>
-                <p className="w-full text-[18px] font-bold  text-gray-900">For general inquiries, reach out to us at info@cloversal.com.
-                </p>
+                <p className="w-full text-[15px] font-semibold text-gray-900">Phone - India +91 - 8240689427</p>
+                <p className="w-full text-[15px] font-semibold text-gray-900">Phone - UAE +971 - 505852966</p>
+                <p className="w-full text-[18px] font-bold text-gray-900">For general inquiries, reach out to us at info@cloversal.com.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    
-      
-     
     </div>
-  )
+  );
 }

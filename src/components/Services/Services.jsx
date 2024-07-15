@@ -11,11 +11,19 @@ import { Link } from "react-router-dom";
 
 const skillsData = [
   {
-    name: "Salesforce Training",
+    name: "Salesforce Implemention",
+    icon: <FaCode className="text-4xl text-primary" />,
+    link: "/implementation",
+    description:
+      "Expert guidance for seamless Salesforce integration and implementation tailored to your business needs. Customized configuration and data migration services",
+    aosDelay: "500",
+  },
+  {
+    name: "Training",
     icon: <FaSalesforce className="text-4xl text-primary" />,
     link: "#",
     description:
-      "Comprehensive Salesforce Training: Our extensive programs cover Salesforce Administration, Development, Business Analysis, Data Analysis, Sales, and Consulting. Delivered by industry-renowned trainers.",
+      " Our extensive programs cover Salesforce Administration, Development, Business Analysis, Data Analysis, Sales, and Consulting. Delivered by industry-renowned trainers.",
 
     aosDelay: "0",
   },
@@ -27,16 +35,9 @@ const skillsData = [
       "Professional website development services to enhance your digital presence. Custom design reflecting your brand identity and user-friendly interface. ",
     aosDelay: "300",
   },
+
   {
-    name: "Salesforce Implemention",
-    icon: <FaCode className="text-4xl text-primary" />,
-    link: "#",
-    description:
-      "Expert guidance for seamless Salesforce integration and implementation tailored to your business needs. Customized configuration and data migration services",
-    aosDelay: "500",
-  },
-  {
-    name: "Staff or Resourcing",
+    name: "Staff Augmentation",
     icon: <MdModelTraining className="text-4xl text-primary" />,
     link: "#",
     description:
@@ -68,11 +69,11 @@ const skillsData = [
     aosDelay: "700",
   },
   {
-    name: "Interview Prepration",
+    name: "Graphic Designing",
     icon: <MdInterpreterMode className="text-4xl text-primary" />,
     link: "#",
     description:
-      "Excel in real job interviews with our mock sessions led by industry professionals. Receive personalized feedback and strategies to enhance your interview performance and confidence.",
+      "We provide seamless Graphic design to our client by understanding their requirment.",
     aosDelay: "700",
   },
   
@@ -81,7 +82,7 @@ const Services = () => {
   return (
     <>
       
-      <div className="bg-gray-100 dark:bg-black dark:text-white py-12 sm:grid sm:place-items-center" id="services">
+      <div className="bg-gray-100 dark:bg-black dark:text-white py-4 sm:grid sm:place-items-center" id="services">
         <div className="container">
           {/* Header */}
           <div className="pb-12 text-center space-y-3">
@@ -109,7 +110,7 @@ const Services = () => {
                 className="card space-y-3 sm:space-y-4 p-4 border-[1px] border-gray-600 rounded-lg shadow-lg "
               >
                 <div>{skill.icon}</div>
-              <Link to="/contact"> <h1 className="text-[20px] font-semibold cursor-pointer hover:scale-110">{skill.name}</h1></Link> 
+              <Link to={skill.link}> <h1 className="text-[20px] font-semibold cursor-pointer hover:scale-110">{skill.name}</h1></Link> 
                 <p className="text-gray-600 dark:text-gray-400">
                   {skill.description}
                 </p>

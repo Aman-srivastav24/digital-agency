@@ -31,9 +31,7 @@ function About() {
       <section class="flex flex-col flex-wrap  mb-6">
         <div class="flex flex-row flex-wrap justify-center">
           <div class="flex justify-center text-center m-2 h-24 w-64">
-            <div class="flex-shrink-0 rounded-full bg-gray-100 w-24 h-24 border border-red-700 z-10">
-              <i class="fas fa-quote-left fa-4x p-2 w-24 h-24 text-red-700"></i>
-            </div>
+       
             <div class="flex flex-col text-left bg-gray-900 text-white text-xs self-center pl-16 pr-4 py-2 -ml-12" data-aos="fade-up">
               <h3 class="text-lg">Our Mission</h3>
               <p class="w-64 text-xs overflow-y-hidden overflow-x-auto">

@@ -1,19 +1,20 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const currentYear = new Date().getFullYear();
 
 const FooterLinks = [
   {
     title: "About",
-    link: "/#about",
+    link: "/about",
   },
   {
     title: "Services",
-    link: "/#features",
+    link: "/services",
   },
   {
     title: "Career",
-    link: "/#career",
+    link: "/career",
   },
 ];
 const HelpLinks = [
@@ -89,12 +90,14 @@ const Footer = () => {
                 </h1>
                 <ul className={`flex flex-col gap-3`}>
                   {FooterLinks.map((link) => (
+                    <Link to={link.link}>
                     <li
                       key={link.title}
                       className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-400 "
                     >
                       <span>{link.title}</span>
                     </li>
+                    </Link>
                   ))}
                 </ul>
               </div>

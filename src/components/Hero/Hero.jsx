@@ -5,7 +5,9 @@ import { SalesForceTraining } from '../Training/SalesForceTraining'
 import Testimonial from '../Testimonial/Testimonial'
 import { ContactPageTwo } from '../Contact/Contact'
 import { Link } from "react-router-dom";
-import { Consulting } from "../Consulting/Consulting";
+import Career from "../Career/Career";
+import SalesforceImplementation from "../Services/SalesforceImplementation";
+import Training from "../Training/Training";
 
 
 const Hero = () => {
@@ -63,10 +65,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    
+     
       <Services />
-      <SalesForceTraining />
-      <Consulting/>
+      <Training/>
+      <SalesforceImplementation/>
       <Testimonial />
       <ContactPageTwo />
     </div>

@@ -5,7 +5,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-pattern': "url('./assets/blog/forest-5375005_1280.jpg')"
+        'hero-pattern': "url('./assets/blog/forest-5375005_1280.jpg')",
+        'careerPage' :"url(./assets/about/vietnam-8704397_1280.jpg)",
+        "implement":"url(./assets/about/pxfuel.jpg)"
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

@@ -41,7 +41,7 @@ const features = [
 
 export default function SalesForceFeatures() {
   return (
-    <div className="dark:bg-gray-900 bg-gray-200 rounded-lg sm:py-32 mt-6">
+    <div className="dark:bg-gray-900 bg-gray-200 rounded-lg sm:py-20 mt-6">
       <div className="mx-auto max-w-7xl px-6 lg:px-8" data-aos="fade-in">
         <div className="mx-auto max-w-2xl lg:text-center">
           

@@ -6,6 +6,7 @@ import { FaBookReader } from "react-icons/fa";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import SalesForceFeatures from "./SalesForceFeatures";
 import CorporateTraining from "./CorporateTraining";
+import { Link } from "react-router-dom";
 
 export function SalesForceTraining() {
   return (
@@ -19,7 +20,7 @@ export function SalesForceTraining() {
         <h2 className="mt-6 text-3xl font-bold leading-tight dark:text-white sm:text-4xl lg:text-5xl">
           Salesforce <span className="text-primary"> Training</span>
         </h2>
-        <a href="/#contact">
+        <Link to="/contact">
         <button
               data-aos="fade-up"
               data-aos-delay="500"
@@ -29,7 +30,7 @@ export function SalesForceTraining() {
             >
               Join Us
             </button>
-            </a>
+            </Link>
         <p className="mt-4 text-base leading-relaxed dark:text-gray-400">
           Your premier destination for cutting-edge your gateway to mastering
           Salesforce with industry-leading training programs designed to elevate

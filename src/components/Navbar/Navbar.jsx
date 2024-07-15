@@ -11,11 +11,7 @@ export const MenuLinks = [
     name: "Training",
     link: "/training",
   },
-  {
-    id: 2,
-    name: "Consulting",
-    link: "/consulting",
-  },
+ 
   {
     id: 3,
     name: "Achievements",
@@ -25,6 +21,11 @@ export const MenuLinks = [
     id: 4,
     name: "Services",
     link: "/services",
+  },
+  {
+    id: 2,
+    name: "Career",
+    link: "/career",
   },
   {
     id: 5,
@@ -56,7 +57,7 @@ const Navbar = () => {
             </span>
           </Link>
           {/* Desktop view Navigation */}
-          <nav className="hidden md:block">
+          <nav className="hidden lg:block">
             <ul className="flex items-center gap-8">
               {MenuLinks.map(({ id, name, link }) => (
                 <li key={id} className="py-4">
@@ -75,7 +76,7 @@ const Navbar = () => {
             </ul>
           </nav>
           {/* Mobile view Drawer  */}
-          <div className="flex items-center gap-4 md:hidden ">
+          <div className="flex items-center gap-4 lg:hidden ">
             <DarkMode />
             {/* Mobile Hamburger icon */}
             {showMenu ? (
