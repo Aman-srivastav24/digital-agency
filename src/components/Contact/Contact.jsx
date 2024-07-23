@@ -1,5 +1,6 @@
 import React from 'react';
-import city from '../../assets/blog/architecture-1868667_1280.jpg';
+import city from '../../assets/website/admistration.png';
+
 import FromComp from './FromComp';
 
 const locations = [

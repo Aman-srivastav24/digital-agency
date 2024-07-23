@@ -13,17 +13,18 @@ export const MenuLinks = [
     link: "/training",
   },
   {
+    id: 2,
+    name:  "IT Services",
+    link: "/itservice",
+  },
+  {
     id: 3,
     name: "Achievements",
     link: "/testimonial",
   },
+
   {
     id: 4,
-    name: "Services",
-    link: "/services",
-  },
-  {
-    id: 2,
     name: "Career",
     link: "/career",
   },

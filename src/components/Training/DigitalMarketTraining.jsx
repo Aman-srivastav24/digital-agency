@@ -19,13 +19,13 @@ const services = [
 function DigitalMarketTraining() {
   return (
     <div>
-    <section className="overflow-hidden bg-white py-8 sm:py-16">
+    <section className="overflow-hidden bg-white dark:bg-gray-900 py-8 sm:py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
           <div className="lg:pr-8 lg:pt-4">
             <div className="lg:max-w-lg">
-              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Digital Marketing Training</p>
-              <p class="mt-6 text-lg leading-8 text-gray-600">"Master the Digital Landscape: Transform Your Marketing Skills Today!
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-300 sm:text-4xl">Digital Marketing Training</p>
+              <p class="mt-6 text-lg leading-8 text-gray-900 dark:text-gray-300">"Master the Digital Landscape: Transform Your Marketing Skills Today!
         </p>
               <dl className="mt-10 max-w-xl space-y-1 text-base leading-7 text-gray-600 lg:max-w-none bg-careerPage bg-cover text-center rounded">
                 {services.map((service, index) => (
