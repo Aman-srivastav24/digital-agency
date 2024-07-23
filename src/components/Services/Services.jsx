@@ -1,83 +1,7 @@
 import React from "react";
-import { MdModelTraining } from "react-icons/md";
-import { MdConnectWithoutContact } from "react-icons/md";
-import { MdInterpreterMode } from "react-icons/md";
-import { GrCertificate } from "react-icons/gr";
-import { CgWebsite } from "react-icons/cg";
-import { FaCode } from "react-icons/fa";
-import { RiPresentationLine } from "react-icons/ri";
-import { FaSalesforce } from "react-icons/fa6";
+import trainingCard from "../../assets/blog/trainingcard.png"
+import serviceCard from "../../assets/blog/servicecard.jpg"
 import { Link } from "react-router-dom";
-
-const skillsData = [
-  {
-    name: "Salesforce Implemention",
-    icon: <FaCode className="text-4xl text-primary" />,
-    link: "/implementation",
-    description:
-      "Expert guidance for seamless Salesforce integration and implementation tailored to your business needs. Customized configuration and data migration services",
-    aosDelay: "500",
-  },
-  {
-    name: "Training",
-    icon: <FaSalesforce className="text-4xl text-primary" />,
-    link: "#",
-    description:
-      " Our extensive programs cover Salesforce Administration, Development, Business Analysis, Data Analysis, Sales, and Consulting. Delivered by industry-renowned trainers.",
-
-    aosDelay: "0",
-  },
-  {
-    name: "Web Development",
-    icon: <CgWebsite className="text-4xl text-primary" />,
-    link: "#",
-    description:
-      "Professional website development services to enhance your digital presence. Custom design reflecting your brand identity and user-friendly interface. ",
-    aosDelay: "300",
-  },
-
-  {
-    name: "Staff Augmentation",
-    icon: <MdModelTraining className="text-4xl text-primary" />,
-    link: "#",
-    description:
-      "We provide staffing solutions to help you find the right talent for your organization. Strategic workforce consulting to streamline HR processes and optimize team performance.",
-    aosDelay: "700",
-  },
-  {
-    name: "Digital Marketing",
-    icon: <RiPresentationLine className="text-4xl text-primary" />,
-    link: "#",
-    description:
-      "Comprehensive digital marketing services to grow your business online.",
-    aosDelay: "700",
-  },
-  {
-    name: "Certification Support",
-    icon: <GrCertificate className="text-4xl text-primary" />,
-    link: "#",
-    description:
-      " Standalone certification support services to help you achieve your Salesforce certification.",
-    aosDelay: "700",
-  },
-  {
-    name: "Placement Service",
-    icon: <MdConnectWithoutContact className="text-4xl text-primary" />,
-    link: "#",
-    description:
-      "Our professional and trained staff ensures placing the right candidate to the right job. Adept at finding quick and suitable placements for our candidates.",
-    aosDelay: "700",
-  },
-  {
-    name: "Graphic Designing",
-    icon: <MdInterpreterMode className="text-4xl text-primary" />,
-    link: "#",
-    description:
-      "We provide seamless Graphic design to our client by understanding their requirment.",
-    aosDelay: "700",
-  },
-  
-];
 const Services = () => {
   return (
     <>
@@ -101,24 +25,45 @@ const Services = () => {
           </div>
 
           {/* services cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 ">
-            {skillsData.map((skill) => (
-              <div
-                key={skill.name}
+          <div className="grid md:grid-cols-2 grid-cols-1 " >
+          <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm h-[500px] mx-auto mb-4 hover:scale-105 cursor-pointer " data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-offset="0">
+    <img src={trainingCard} alt="Training Card" class="absolute inset-0 h-full w-full object-cover"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+    <h3 class="z-10 mt-3 text-3xl font-bold text-white">Training</h3>
+    <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">"We offer comprehensive training in Salesforce, Website Development, Digital Marketing, Customer Service, Graphics Designing, and Basics of Computer. Enhance your skills and stay ahead in the competitive IT landscape with our expert-led courses."</div>
+    <Link to="/training">
+              <button
                 data-aos="fade-up"
-                data-aos-delay={skill.aosDelay}
-                className="card space-y-3 sm:space-y-4 p-4 border-[1px] border-gray-600 rounded-lg shadow-lg "
+                data-aos-delay="500"
+                data-aos-offset="0"
+                className="primary-btn "
               >
-                <div>{skill.icon}</div>
-              <Link to={skill.link}> <h1 className="text-[20px] font-semibold cursor-pointer hover:scale-110">{skill.name}</h1></Link> 
-                <p className="text-gray-600 dark:text-gray-400">
-                  {skill.description}
-                </p>
-              </div>
-            ))}
-          </div>
+                Explore
+              </button>
+            </Link>
+</article>
 
-        
+<article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm h-[500px] mx-auto mb-4 hover:scale-105 cursor-pointer" data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-offset="0">
+    <img src={serviceCard} alt="Service Card" class="absolute inset-0 h-full w-full object-cover"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
+    <h3 class="z-10 mt-3 text-3xl font-bold text-white">IT Services</h3>
+    <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">"We offer expert IT services including Salesforce Implementation, Website Development, Digital Marketing, Graphics Designing, and Resourcing. Partner with us to leverage cutting-edge solutions and drive your business forward."</div>
+    <Link to="/itservice">
+              <button
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-offset="0"
+                className="primary-btn "
+              >
+                Explore
+              </button>
+            </Link>
+</article>
+</div>
         </div>
       </div>
     </>

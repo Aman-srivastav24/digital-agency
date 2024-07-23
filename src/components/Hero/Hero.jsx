@@ -8,6 +8,8 @@ import { Link } from "react-router-dom";
 import Career from "../Career/Career";
 import SalesforceImplementation from "../Services/SalesforceImplementation";
 import Training from "../Training/Training";
+import ItServices from "../Services/ItServices";
+import WebDev from "../Services/WebDev";
 
 
 const Hero = () => {
@@ -65,7 +67,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
-     
+      <WebDev/>
+     <ItServices/>
       <Services />
       <Training/>
       <SalesforceImplementation/>

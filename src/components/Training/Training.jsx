@@ -65,7 +65,7 @@ function Training() {
                     <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-400 rounded-lg"></span>
                     <div class="relative h-full p-5 bg-white border-2 border-blue-400 rounded-lg">
                         <div class="flex items-center -mt-1">
-                            <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Interview Mock</h3>
+                            <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Digital Marketing</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-blue-400 uppercase">------------</p>
                         <p class="mb-2 text-gray-600">A Project Audit is a formal review of a project, which is intended
@@ -80,7 +80,7 @@ function Training() {
                     <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-yellow-400 rounded-lg"></span>
                     <div class="relative h-full p-5 bg-white border-2 border-yellow-400 rounded-lg">
                         <div class="flex items-center -mt-1">
-                            <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Corporate Training</h3>
+                            <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Graphic Designing</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-yellow-400 uppercase">------------</p>
                         <p class="mb-2 text-gray-600">A security hacker is someone who explores methods for breaching
@@ -95,7 +95,7 @@ function Training() {
                     <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg"></span>
                     <div class="relative h-full p-5 bg-white border-2 border-green-500 rounded-lg">
                         <div class="flex items-center -mt-1">
-                            <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Personality Development</h3>
+                            <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Basic of Computers</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-green-500 uppercase">------------</p>
                         <p class="mb-2 text-gray-600">Bot development frameworks were created as advanced software tools
@@ -111,7 +111,7 @@ function Training() {
                     <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg"></span>
                     <div class="relative h-full p-5 bg-white border-2 border-green-500 rounded-lg">
                         <div class="flex items-center -mt-1">
-                            <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Communication Buildup</h3>
+                            <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Customer Service</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-green-500 uppercase">------------</p>
                         <p class="mb-2 text-gray-600">Bot development frameworks were created as advanced software tools

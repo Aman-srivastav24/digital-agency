@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
 import Logo from "../../assets/website/Vector.svg";
@@ -11,7 +11,6 @@ export const MenuLinks = [
     name: "Training",
     link: "/training",
   },
- 
   {
     id: 3,
     name: "Achievements",
@@ -33,16 +32,35 @@ export const MenuLinks = [
     link: "/about",
   },
 ];
+
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const menuRef = useRef(null);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+  const handleMenuClose = () => {
+    setShowMenu(false);
+  };
+
+  const handleClickOutside = (event) => {
+    if (menuRef.current && !menuRef.current.contains(event.target)) {
+      handleMenuClose();
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div
-      className="fixed w-full top-0 left-0 z-10 dark:bg-black dark:text-white bg-white duration-300 
-    "
+      className="fixed w-full top-0 left-0 z-10 dark:bg-black dark:text-white bg-white duration-300"
     >
       <div className="container py-3 md:py-2">
         <div className="flex justify-between items-center">
@@ -63,26 +81,26 @@ const Navbar = () => {
                 <li key={id} className="py-4">
                   <Link
                     to={link}
-                    className=" text-lg font-medium  hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500  "
+                    className="text-lg font-medium hover:text-primary py-2 hover:border-b-2 hover:border-primary transition-colors duration-500"
                   >
                     {name}
                   </Link>
                 </li>
               ))}
               <Link to="/contact">
-              <button className="primary-btn">Get in Touch</button>
+                <button className="primary-btn">Get in Touch</button>
               </Link>
               <DarkMode />
             </ul>
           </nav>
-          {/* Mobile view Drawer  */}
-          <div className="flex items-center gap-4 lg:hidden ">
+          {/* Mobile view Drawer */}
+          <div className="flex items-center gap-4 lg:hidden">
             <DarkMode />
             {/* Mobile Hamburger icon */}
             {showMenu ? (
               <HiMenuAlt1
                 onClick={toggleMenu}
-                className=" cursor-pointer transition-all"
+                className="cursor-pointer transition-all"
                 size={30}
               />
             ) : (
@@ -95,7 +113,11 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <ResponsiveMenu showMenu={showMenu} />
+      <ResponsiveMenu 
+        showMenu={showMenu} 
+        handleMenuClose={handleMenuClose} 
+        ref={menuRef} 
+      />
     </div>
   );
 };

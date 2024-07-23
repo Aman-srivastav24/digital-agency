@@ -18,6 +18,8 @@ import Career from "./components/Career/Career.jsx";
 import ChatBox from "./components/ChatBot/ChatBot.jsx";
 import SalesforceImplementation from "./components/Services/SalesforceImplementation.jsx";
 import Training from "./components/Training/Training.jsx";
+import ItServices from "./components/Services/ItServices.jsx";
+import WebDev from "./components/Services/WebDev.jsx";
 
 
 
@@ -42,13 +44,16 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/implementation" element={<SalesforceImplementation />} />
             <Route path="/training" element={<Training />} />
             <Route path="/testimonial" element={<Testimonial />} />
             <Route path="/about" element={<About/>}/>
             <Route path="/career" element={<Career/>}/>
             <Route path="/contact" element={<ContactPageTwo />} />
             <Route path="/salesforcetraining" element={<SalesForceTraining />} />
+            {/* itservices  */}
+            <Route path="/itservice" element={<ItServices/>}/>
+            <Route path="/implementation" element={<SalesforceImplementation />} />
+            <Route path="/webdevService" element={<WebDev />} />
           </Routes>
         </main>
         <Footer />
