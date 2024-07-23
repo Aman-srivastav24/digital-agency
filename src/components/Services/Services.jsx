@@ -26,7 +26,7 @@ const Services = () => {
 
           {/* services cards */}
           <div className="grid md:grid-cols-2 grid-cols-1 " >
-          <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm h-[500px] mx-auto mb-4 hover:scale-105 cursor-pointer " data-aos="fade-up"
+          <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl px-8 pb-8 pt-40 max-w-sm h-[500px] mx-auto mb-4 hover:scale-105 cursor-pointer  " data-aos="fade-up"
                 data-aos-delay="500"
                 data-aos-offset="0">
     <img src={trainingCard} alt="Training Card" class="absolute inset-0 h-full w-full object-cover"/>

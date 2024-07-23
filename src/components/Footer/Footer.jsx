@@ -17,24 +17,7 @@ const FooterLinks = [
     link: "/career",
   },
 ];
-const HelpLinks = [
-  {
-    title: "Customer Support",
-    link: "/#support",
-  },
-  {
-    title: "Delivery Details",
-    link: "/#delivery-details",
-  },
-  {
-    title: "Terms & Conditions",
-    link: "/#terms",
-  },
-  {
-    title: "Privacy Policy",
-    link: "/#policy",
-  },
-];
+
 const contact = [
   {
     title: "info@cloversal.com.",
@@ -53,7 +36,7 @@ const contact = [
 const Footer = () => {
   return (
     <div className="bg-dark text-white mt-4">
-      <section className="container py-10">
+      <section className="container py-10 ">
         <div className=" grid md:grid-cols-3 py-5">
           {/* company Details */}
           <div className=" py-8 px-4 ">
@@ -102,23 +85,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="">
-              <div className="py-8 px-4 ">
-                <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">
-                  Help
-                </h1>
-                <ul className="flex flex-col gap-3">
-                  {HelpLinks.map((link) => (
-                    <li
-                      key={link.title}
-                      className="cursor-pointer hover:translate-x-1 duration-300 hover:!text-primary space-x-1 text-gray-400 "
-                    >
-                      <span>{link.title}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+          
             <div className="">
               <div className="py-8 px-4 ">
                 <h1 className="sm:text-xl text-xl font-bold sm:text-left text-justify mb-3">

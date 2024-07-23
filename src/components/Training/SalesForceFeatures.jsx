@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MdOutlineAdminPanelSettings, MdDeveloperMode, MdBusiness, MdAnalytics, MdCloudSync, MdOutlineContacts } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 const features = [
   {
@@ -75,11 +76,13 @@ export default function SalesForceFeatures() {
                     <>
                       {feature.description}
                       <div className="mt-4 flex space-x-4">
+                        <Link to="/contact">
                       <button
                           className="bg-indigo-600 text-white py-2 px-4 rounded"
                         >
                           Join Now
                         </button>
+                        </Link>
                         <button
                           className="text-indigo-600"
                           onClick={() => toggleDescription(index)}

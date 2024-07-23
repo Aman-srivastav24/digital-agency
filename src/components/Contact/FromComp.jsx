@@ -83,9 +83,16 @@ function FromComp() {
                     >
                       <option value="" disabled>Select a reason</option>
                       <option value="training">Salesforce Training</option>
-                      <option value="training">Salesforce Corporate Training</option>
-                      <option value="development">Website Development</option>
-                      <option value="consultation">Consultation</option>
+                      <option value="training">Salesforce Implementation(Service)</option>
+                      <option value="development">Website Development(Training)</option>
+                      <option value="development">Website Development(Service)</option>
+                      <option value="consultation">Digital marketing(Service)</option>
+                      <option value="consultation">Digital marketing(Training)</option>
+                      <option value="consultation">Graphic Designing(Service)</option>
+                      <option value="consultation">Graphic Designing(Training)</option>
+                      <option value="consultation">Customer Service(Training)</option>
+                      <option value="consultation">Staff Resourcing(Service)</option>
+                      <option value="consultation">Basic of Computers Training</option>
                       <option value="consultation">Job Enquiry</option>
                       <option value="other">Other</option>
                     </select>

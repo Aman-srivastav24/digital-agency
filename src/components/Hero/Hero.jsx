@@ -67,11 +67,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <WebDev/>
-     <ItServices/>
       <Services />
       <Training/>
-      <SalesforceImplementation/>
+     <ItServices/>
+      
       <Testimonial />
       <ContactPageTwo />
     </div>

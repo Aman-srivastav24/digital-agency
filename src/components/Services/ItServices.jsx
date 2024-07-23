@@ -24,19 +24,19 @@ const services = [
     image: dm,
     title: "Digital Marketing",
     description: "Boost your online presence with our digital marketing strategies. From SEO to social media, we help you connect with your audience and grow your brand.",
-    link: "/services/digital-marketing"
+    link: "/digitalmarketingService"
   },
   {
     image: resourcing,
     title: "Resourcing",
     description: "Providing top-tier talent for your IT projects. Our resourcing services ensure you have skilled professionals to meet your business demands and achieve your goals.",
-    link: "/services/resourcing"
+    link: "/resourcingService"
   },
   {
     image: gd,
     title: "Graphic Designing",
     description: "Bringing your brand to life with creative and impactful designs. Our graphic designing services deliver visually stunning solutions that communicate your message effectively.",
-    link: "/services/graphic-designing"
+    link: "/graphicdesignService"
   }
 ];
 
@@ -51,7 +51,7 @@ function ItServices() {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <h1 className="dark:text-white font-bold text-5xl leading-tight mb-6">Innovative IT Solutions, Exceptional Results</h1>
-              <p className="text-white text-xl mb-8">Crafting responsive, user-friendly websites tailored to your business needs. Our web development services ensure a seamless online presence, exceptional user experience, and robust performance to drive your success.</p>
+              <p className="dark:text-gray-300 text-gray-900 text-xl mb-8">Crafting responsive, user-friendly websites tailored to your business needs. Our web development services ensure a seamless online presence, exceptional user experience, and robust performance to drive your success.</p>
             </div>
             <div className="md:w-1/2">
               <img src={it} alt="IT Services" className="w-full rounded-lg shadow-lg" />
@@ -80,7 +80,7 @@ function ItServices() {
                   </div>
                   <div>
                     <Link to={service.link} className="inline-block pb-1 mt-2 text-base font-black text-blue-600 uppercase border-b border-transparent hover:border-blue-600">
-                      Enquire Now
+                      Explore
                     </Link>
                   </div>
                 </div>

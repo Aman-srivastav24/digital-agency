@@ -3,6 +3,7 @@ import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi";
 import ResponsiveMenu from "./ResponsiveMenu";
 import Logo from "../../assets/website/Vector.svg";
 import DarkMode from "./DarkMode";
+import cloversalLogo from "../../assets/brands/CloversalLogo.jpeg"
 import { Link } from "react-router-dom";
 
 export const MenuLinks = [
@@ -69,7 +70,7 @@ const Navbar = () => {
             to="/"
             className="flex items-center gap-3"
           >
-            <img src={Logo} alt="" className="w-5" />
+            <img src={cloversalLogo} alt="" className="w-[40px] h-[40px] rounded-lg " />
             <span className="text-2xl sm:text-3xl font-semibold">
               Cloversal
             </span>

@@ -24,7 +24,7 @@ function Training() {
 </section>
 {/* trainings */}
 <div class="container relative flex flex-col justify-between h-full max-w-6xl px-10 mx-auto xl:px-0 mt-5">
-    <h2 class="mb-1 text-3xl font-extrabold leading-tight text-gray-900">Trainings</h2>
+    <h2 class="mb-1 text-3xl font-extrabold leading-tight text-gray-900 dark:text-gray-300">Trainings</h2>
     <p class="mb-12 text-lg text-gray-500">Here is a few of the awesome Training we provide.</p>
     <div class="w-full">
         <div class="flex flex-col w-full mb-10 sm:flex-row">
@@ -36,8 +36,7 @@ function Training() {
                             <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Salesforce Training</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-indigo-500 uppercase">------------</p>
-                        <p class="mb-2 text-gray-600">A decentralized application (dapp) is an application built on a
-                            decentralized network that combines a smart contract and a frontend user interface.</p>
+                        <p class="mb-2 text-gray-600">We provide Salesforce training to enhance your CRM skills, streamline business processes, and boost career opportunities in customer management.</p>
                             <Link to="/salesforcetraining"><button className='primary-btn'>Explore</button> </Link> 
                     </div>
                     
@@ -51,9 +50,8 @@ function Training() {
                             <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Web Development</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-purple-500 uppercase">------------</p>
-                        <p class="mb-2 text-gray-600">Web 3.0 is the third generation of Internet services that will
-                            focus on understanding and analyzing data to provide a semantic web.</p>
-                            <Link to="/contact"><button className='primary-btn'>Explore</button> </Link>
+                        <p class="mb-2 text-gray-600">Our website development training covers building responsive sites, optimizing user experiences, and implementing modern web technologies for effective online presence.</p>
+                            <Link to="/webdevTraining"><button className='primary-btn'>Explore</button> </Link>
                     </div>
                     
                 </div>
@@ -68,9 +66,8 @@ function Training() {
                             <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Digital Marketing</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-blue-400 uppercase">------------</p>
-                        <p class="mb-2 text-gray-600">A Project Audit is a formal review of a project, which is intended
-                            to assess the extent up to which project management standards are being upheld.</p>
-                            <Link to="/contact"><button className='primary-btn'>Explore</button> </Link> 
+                        <p class="mb-2 text-gray-600">We offer digital marketing training to master SEO, PPC, social media, and content strategies for enhancing online visibility and engagement.</p>
+                            <Link to="/digitalmarketingTraining"><button className='primary-btn'>Explore</button> </Link> 
                     </div>
                    
                 </div>
@@ -83,9 +80,8 @@ function Training() {
                             <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Graphic Designing</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-yellow-400 uppercase">------------</p>
-                        <p class="mb-2 text-gray-600">A security hacker is someone who explores methods for breaching
-                            defenses and exploiting weaknesses in a computer system or network.</p>
-                            <Link to="/contact"><button className='primary-btn'>Explore</button> </Link> 
+                        <p class="mb-2 text-gray-600"> We provide graphic design training to develop skills in creating impactful visuals, including branding, print, and digital graphics for effective communication.</p>
+                            <Link to="/graphicTraining"><button className='primary-btn'>Explore</button> </Link> 
                     </div>
                    
                 </div>
@@ -98,9 +94,8 @@ function Training() {
                             <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Basic of Computers</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-green-500 uppercase">------------</p>
-                        <p class="mb-2 text-gray-600">Bot development frameworks were created as advanced software tools
-                            that eliminate a large amount of manual work and accelerate the development process.</p>
-                            <Link to="/contact"><button className='primary-btn'>Explore</button> </Link> 
+                        <p class="mb-2 text-gray-600">Our basics of computer training covers fundamental skills, including operating systems, software applications, and internet usage for a solid tech foundation.</p>
+                            <Link to="/basicofcomputerTraining"><button className='primary-btn'>Explore</button> </Link> 
                     </div>
                   
                 </div>
@@ -114,9 +109,8 @@ function Training() {
                             <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Customer Service</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-green-500 uppercase">------------</p>
-                        <p class="mb-2 text-gray-600">Bot development frameworks were created as advanced software tools
-                            that eliminate a large amount of manual work and accelerate the development process.</p>
-                            <Link to="/contact"><button className='primary-btn'>Explore</button> </Link>
+                        <p class="mb-2 text-gray-600"> Our customer service training focuses on improving communication skills, handling inquiries, and delivering exceptional service to enhance customer satisfaction and loyalty.</p>
+                            <Link to="/customerserviceTraining"><button className='primary-btn'>Explore</button> </Link>
                     </div>
                      
                 </div>
