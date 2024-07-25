@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
@@ -12,37 +12,34 @@ function FromComp() {
     message: ''
   });
 
-  const [loading, setLoading] = useState(false);
-  const [success, setSuccess] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(false);
 
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData({ ...formData, [id]: value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setSuccess(false);
-    
-    axios.post('http://127.0.0.1:5000/submit-form', formData)
-      .then(response => {
-        setLoading(false);
-        setSuccess(true);
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          phone: '',
-          interest: '',
-          message: ''
-        }); // Clear form data
-      })
-      .catch(error => {
-        setLoading(false);
-        console.error('There was an error submitting the form!', error);
-      });
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
   };
+
+  useEffect(() => {
+    const { firstName, lastName, email, phone, interest, message } = formData;
+    if (
+      firstName &&
+      lastName &&
+      email &&
+      validateEmail(email) &&
+      phone &&
+      interest &&
+      message
+    ) {
+      setIsFormValid(true);
+    } else {
+      setIsFormValid(false);
+    }
+  }, [formData]);
 
   return (
     <div className="flex items-center justify-center" data-aos="zoom-in">
@@ -52,141 +49,116 @@ function FromComp() {
           At Cloversal, your journey to success is our top priority. Whether you have inquiries about our Salesforce training programs, professional services, or want to explore potential collaborations, our dedicated team is here to assist you.
         </p>
         <p>Connect with Cloversal</p>
-        {!success ? (
-          <form onSubmit={handleSubmit} className="mt-8 space-y-4">
-            <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
-              <div className="grid w-full items-center gap-1.5">
-                <label
-                  className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  htmlFor="firstName"
-                >
-                  First Name
-                </label>
-                <input
-                  className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                  type="text"
-                  id="firstName"
-                  placeholder="First Name"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="grid w-full items-center gap-1.5">
-                <label
-                  className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                  htmlFor="lastName"
-                >
-                  Last Name
-                </label>
-                <input
-                  className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                  type="text"
-                  id="lastName"
-                  placeholder="Last Name"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                />
-              </div>
-            </div>
+        
+        <form action="https://api.web3forms.com/submit" method="POST" className="mt-8 space-y-4">
+          <input type="hidden" name="access_key" value="ad157cd5-dae3-4972-be01-1d2e8851a698" />
+          <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
             <div className="grid w-full items-center gap-1.5">
-              <label
-                className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                htmlFor="email"
-              >
-                Email
+              <label className="text-sm font-medium leading-none text-gray-700" htmlFor="firstName">
+                First Name
               </label>
               <input
-                className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
+                className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
                 type="text"
-                id="email"
-                placeholder="Email"
-                value={formData.email}
+                id="firstName"
+                name="firstName"
+                placeholder="First Name"
+                value={formData.firstName}
                 onChange={handleChange}
               />
             </div>
             <div className="grid w-full items-center gap-1.5">
-              <label
-                className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                htmlFor="phone"
-              >
-                Phone number
+              <label className="text-sm font-medium leading-none text-gray-700" htmlFor="lastName">
+                Last Name
               </label>
               <input
-                className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                type="tel"
-                id="phone"
-                placeholder="Phone number"
-                value={formData.phone}
+                className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Last Name"
+                value={formData.lastName}
                 onChange={handleChange}
               />
             </div>
-            <div className="grid w-full items-center gap-1.5">
-              <label
-                className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                htmlFor="interest"
-              >
-                Interested In
-              </label>
-              <select
-                className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-500 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                id="interest"
-                value={formData.interest}
-                onChange={handleChange}
-              >
-                <option value="" disabled>select</option>
-                <option value="training">Salesforce Training</option>
-                <option value="training">Salesforce Implementation(Service)</option>
-                <option value="development">Website Development(Training)</option>
-                <option value="development">Website Development(Service)</option>
-                <option value="consultation">Digital marketing(Service)</option>
-                <option value="consultation">Digital marketing(Training)</option>
-                <option value="consultation">Graphic Designing(Service)</option>
-                <option value="consultation">Graphic Designing(Training)</option>
-                <option value="consultation">Customer Service(Training)</option>
-                <option value="consultation">Staff Resourcing(Service)</option>
-                <option value="consultation">Basic of Computers Training</option>
-                <option value="consultation">Job Enquiry</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div className="grid w-full items-center gap-1.5">
-              <label
-                className="text-sm font-medium leading-none text-gray-700 peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
-                htmlFor="message"
-              >
-                Message
-              </label>
-              <textarea
-                className="flex w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-50 dark:focus:ring-gray-400 dark:focus:ring-offset-gray-900"
-                id="message"
-                placeholder="Leave us a message"
-                cols={3}
-                value={formData.message}
-                onChange={handleChange}
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-              disabled={loading}
+          </div>
+          <div className="grid w-full items-center gap-1.5">
+            <label className="text-sm font-medium leading-none text-gray-700" htmlFor="email">
+              Email
+            </label>
+            <input
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="grid w-full items-center gap-1.5">
+            <label className="text-sm font-medium leading-none text-gray-700" htmlFor="phone">
+              Phone number
+            </label>
+            <input
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Phone number"
+              value={formData.phone}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="grid w-full items-center gap-1.5">
+            <label className="text-sm font-medium leading-none text-gray-700" htmlFor="interest">
+              Interested In
+            </label>
+            <select
+              className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+              id="interest"
+              name="interest"
+              value={formData.interest}
+              onChange={handleChange}
             >
-              {loading ? 'Sending...' : 'Send Message'}
-            </button>
-          </form>
-        ) : (
-          <section className="flex items-center h-screen p-16 bg-gray-50 dark:bg-gray-700">
-            <div className="container flex flex-col items-center">
-              <div className="flex flex-col gap-6 max-w-md text-center">
-                <p className="text-2xl md:text-3xl dark:text-gray-300">
-                  Request Submitted Successfully. Our Team Will Contact You Soon.
-                </p>
-                <Link to="/" className="px-8 py-4 text-xl font-semibold rounded bg-purple-600 text-gray-50 hover:text-gray-200">
-                  Back to Home
-                </Link>
-              </div>
-            </div>
-          </section>
-        )}
+              <option value="" disabled>select</option>
+              <option value="Salesforce training">Salesforce Training</option>
+              <option value="Salesforce Implementation(Service)">Salesforce Implementation(Service)</option>
+              <option value="Website Development(Training)">Website Development(Training)</option>
+              <option value="Website Development(Service)">Website Development(Service)</option>
+              <option value="Digital marketing(Service)">Digital marketing(Service)</option>
+              <option value="Digital marketing(Training)">Digital marketing(Training)</option>
+              <option value="Graphic Designing(Service)">Graphic Designing(Service)</option>
+              <option value="Graphic Designing(Training)">Graphic Designing(Training)</option>
+              <option value="Customer Service(Training)">Customer Service(Training)</option>
+              <option value="Staff Resourcing(Service)">Staff Resourcing(Service)</option>
+              <option value="Basic of Computers Training">Basic of Computers Training</option>
+              <option value="Job Enquiry">Job Enquiry</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div className="grid w-full items-center gap-1.5">
+            <label className="text-sm font-medium leading-none text-gray-700" htmlFor="message">
+              Message
+            </label>
+            <textarea
+              className="flex w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+              id="message"
+              name="message"
+              placeholder="Leave us a message"
+              cols={3}
+              value={formData.message}
+              onChange={handleChange}
+            />
+          </div>
+          <button
+            type="submit"
+            className={`w-full rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black ${!isFormValid ? 'opacity-50 cursor-not-allowed' : ''}`}
+            disabled={!isFormValid}
+          >
+            Send Message
+          </button>
+        </form>
       </div>
     </div>
   );
