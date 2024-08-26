@@ -28,7 +28,7 @@ const services = [
   },
   {
     image: resourcing,
-    title: "Resourcing",
+    title: "Resourcing/Staff augmentation",
     description: "Providing top-tier talent for your IT projects. Our resourcing services ensure you have skilled professionals to meet your business demands and achieve your goals.",
     link: "/resourcingService"
   },

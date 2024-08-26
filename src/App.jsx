@@ -48,7 +48,7 @@ const App = () => {
       <div className="bg-white dark:bg-black dark:text-white text-black overflow-x-hidden">
         <Navbar />
         <ChatBox/>
-        <main className="pt-[80px]"> {/* Adjust this value based on the height of your navbar */}
+        <main className="md:pt-[80px] sm:pt-[20px]"> {/* Adjust this value based on the height of your navbar */}
           <Routes>
             <Route path="/" element={<Hero />} />
             <Route path="/services" element={<Services />} />

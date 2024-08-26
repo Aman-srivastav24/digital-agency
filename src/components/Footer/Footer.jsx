@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin ,FaTwitter} from "react-icons/fa";
 import { Link } from "react-router-dom";
 const currentYear = new Date().getFullYear();
 
@@ -25,7 +25,7 @@ const contact = [
   },
 
   {
-    title: "+91 - 8240689427",
+    title: "+91 - 77628 68012",
     link: "/#blogs",
   },
   {
@@ -44,7 +44,7 @@ const Footer = () => {
               Cloversal
             </h1>
             <p className="text-sm">
-              At Cloversal, our mission is to provide top-tier training and
+              At Cloversal, our mission is to provide top-tier IT training and
               services that empower individuals and organizations to thrive in
               today’s competitive landscape. We are dedicated to offering
               unparalleled Salesforce training and a range of additional
@@ -53,14 +53,17 @@ const Footer = () => {
             <br />
             {/* Social Handle */}
             <div className="flex items-center gap-4 mt-6">
-              <a href="#">
+              <a href="https://www.instagram.com/cloversaltechnology/">
                 <FaInstagram className="text-2xl hover:text-primary duration-300" />
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com/profile.php?id=61563361641741&mibextid=rS40aB7S9Ucbxw6v">
                 <FaFacebook className="text-2xl hover:text-primary duration-300" />
               </a>
               <a href="#">
                 <FaLinkedin className="text-2xl hover:text-primary duration-300" />
+              </a>
+              <a href=" https://x.com/CloversalIT">
+                <FaTwitter className="text-2xl hover:text-primary duration-300" />
               </a>
             </div>
           </div>

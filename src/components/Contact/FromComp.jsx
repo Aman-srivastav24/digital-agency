@@ -51,7 +51,7 @@ function FromComp() {
         <p>Connect with Cloversal</p>
         
         <form action="https://api.web3forms.com/submit" method="POST" className="mt-8 space-y-4">
-          <input type="hidden" name="access_key" value="ad157cd5-dae3-4972-be01-1d2e8851a698" />
+          <input type="hidden" name="access_key" value="e39ace46-5a99-45a6-8876-b163546db068" />
           <div className="grid w-full gap-y-4 md:gap-x-4 lg:grid-cols-2">
             <div className="grid w-full items-center gap-1.5">
               <label className="text-sm font-medium leading-none text-gray-700" htmlFor="firstName">
@@ -115,13 +115,13 @@ function FromComp() {
               Interested In
             </label>
             <select
-              className="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-800 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+              className="flex h-10 w-full rounded-md border border-gray-300 dark:bg-black px-3 py-2 text-sm placeholder:dark:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
               id="interest"
               name="interest"
               value={formData.interest}
               onChange={handleChange}
             >
-              <option value="" disabled>select</option>
+              <option value="" disabled>Select</option>
               <option value="Salesforce training">Salesforce Training</option>
               <option value="Salesforce Implementation(Service)">Salesforce Implementation(Service)</option>
               <option value="Website Development(Training)">Website Development(Training)</option>

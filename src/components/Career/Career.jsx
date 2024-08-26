@@ -58,16 +58,16 @@ function Career() {
                 Join <span class="text-indigo-600">Our Team</span>
               </h2>
               <h3 class="text-xl md:text-3xl text-white mt-10">
-                and Shape the Future of Technolgy
+                And Shape the Future of Technolgy
               </h3>
               <p class="text-md md:text-xl text-white mt-10">
                 At Cloversal, we are passionate about empowering individuals and
-                organizations through exceptional Salesforce training and
+                organizations through exceptional IT training and
                 innovative solutions. We believe in nurturing talent and
                 providing a collaborative environment where you can grow and
                 make a meaningful impact. If you're driven, innovative, and
                 ready to take your career to the next level, Cloversal is the
-                place for you
+                place for you.
               </p>
             </div>
           </div>
@@ -77,7 +77,7 @@ function Career() {
       {/* job openings */}
       <div>
         <ul className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
-          <h1 class="text-2xl md:text-3xl pl-2 my-2 border-l-4  font-sans font-bold border-teal-400  dark:text-gray-200">
+          <h1 class="text-2xl md:text-3xl pl-2 my-2 border-l-4 underline font-sans font-bold border-teal-400  dark:text-gray-200">
             Job Openings
           </h1>
           {jobPositions.map((job, index) => (
@@ -125,8 +125,7 @@ function Career() {
                             <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Dynamic Work Environment</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-indigo-500 uppercase">------------</p>
-                        <p class="mb-2 text-gray-600">Experience a vibrant workplace that fosters creativity, innovation, and collaboration. At Cloversal, every day brings new opportunities to learn and grow.",
-                        color: "indigo-500</p>
+                        <p class="mb-2 text-gray-600">Experience a vibrant workplace that fosters creativity, innovation, and collaboration. At Cloversal, every day brings new opportunities to learn and grow.</p>
                     </div>
                 </div>
             </div>
@@ -138,8 +137,7 @@ function Career() {
                             <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Career Growth Opportunities</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-purple-500 uppercase">------------</p>
-                        <p class="mb-2 text-gray-600">We are committed to your professional development. With access to ongoing training, certifications, and mentorship programs, you’ll have the tools and support you need to advance your career.",
-                        color: "purple-500</p>
+                        <p class="mb-2 text-gray-600">We are committed to your professional development. With access to ongoing training, certifications, and mentorship programs, you’ll have the tools and support you need to advance your career.</p>
                     </div>
                 </div>
             </div>
@@ -153,8 +151,7 @@ function Career() {
                             <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Innovative Projects</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-blue-400 uppercase">------------</p>
-                        <p class="mb-2 text-gray-600">Join a diverse and inclusive team where every voice is heard and valued. We believe that a diverse workforce drives innovation and excellence.",
-                        color: "yellow-400</p>
+                        <p class="mb-2 text-gray-600">Join a diverse and inclusive team where every voice is heard and valued. We believe that a diverse workforce drives innovation and excellence.</p>
                     </div>
                 </div>
             </div>
@@ -166,8 +163,7 @@ function Career() {
                             <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Employee Benefits</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-yellow-400 uppercase">------------</p>
-                        <p class="mb-2 text-gray-600">Enjoy a comprehensive benefits package that includes health insurance, paid time off, retirement plans, and more. We take care of our team so they can focus on what they do best.",
-                        color: "green-500</p>
+                        <p class="mb-2 text-gray-600">Enjoy a comprehensive benefits package that includes health insurance, paid time off, retirement plans, and more. We take care of our team so they can focus on what they do best.</p>
                     </div>
                 </div>
             </div>

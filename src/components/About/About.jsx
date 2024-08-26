@@ -4,6 +4,7 @@ import careersupport from "../../assets/about/careersupport.jpg";
 import certificate from "../../assets/about/certificatepic.png";
 import trainer from "../../assets/about/industryTrainer.jpg";
 import project from "../../assets/about/realworldproject.jpg";
+import mission from "../../assets/trainings/leadership.png"
 
 function About() {
   return (
@@ -20,15 +21,24 @@ function About() {
               About <span class="text-indigo-600"> The Cloversal</span>
             </h2>
             <p class="text-gray-700">
-              Your comprehensive solution for Salesforce training and a suite of
+              Your comprehensive solution for IT training and a suite of
               professional services designed to propel your career and business
               forward.
             </p>
-          </div>
-        </div>
-      </div>
-      {/* mission */}
-      <section class="flex flex-col flex-wrap  mb-6">
+             <div className=" mt-12">
+            <h2 class="my-4 font-bold text-3xl  sm:text-4xl ">
+              <span class="text-indigo-600"> Our Mission </span>
+              <img src={mission} alt="cloversal logo" className="w-24 h-24" />
+            </h2>
+            <p class="text-gray-700 text-[18px]"> 
+            At Cloversal, our mission is to provide top-tier training and
+                services that empower individuals and organizations to thrive in
+                today’s competitive landscape. We are dedicated to offering
+                unparalleled Salesforce training and a range of additional
+                services to meet your diverse needs.
+            </p>
+            </div>
+            {/* <section class="flex flex-col flex-wrap  mb-6">
         <div class="flex flex-row flex-wrap justify-center">
           <div class="flex justify-center text-center m-2 h-24 w-64">
        
@@ -44,7 +54,13 @@ function About() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      
+          </div>
+        </div>
+      </div>
+      {/* mission */}
+    
       {/* section2 */}
       <div class="text-center p-8">
         <h2 class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
@@ -64,7 +80,7 @@ function About() {
               Industry-Leading Trainers
             </h3>
             <p class="sm:text-lg mt-6">
-              : Interactive sessions led by industry experts for collaborative
+              Interactive sessions led by industry experts for collaborative
               learning experiences. Convenient, self-paced modules accessible
               from anywhere, anytime. Combine online learning with in-person
               workshops for a balanced and immersive learning experience.
@@ -86,7 +102,7 @@ function About() {
             </h3>
             <p class="sm:text-lg mt-6">
               Gain practical knowledge through hands-on projects and
-              scenarios.Engage in practical projects that mirror industry
+              scenarios. Engage in practical projects that mirror industry
               scenarios to develop critical problem-solving skills. Gain
               insights from experienced instructors with deep industry knowledge
               to apply theoretical concepts in practical settings.
@@ -108,7 +124,7 @@ function About() {
             </h3>
             <p class="sm:text-lg mt-6">
               We ensure you pass your certification exams with our thorough
-              preparation and support.Personalized study plans tailored to your
+              preparation and support. Personalized study plans tailored to your
               learning pace and career objectives. Access to comprehensive study
               materials, including practice exams and quizzes. Expert guidance
               and mentoring from certified trainers with proven track records.
@@ -134,7 +150,7 @@ function About() {
               interview skills with realistic simulations and expert feedback.
               Join a supportive community of past graduates for ongoing
               mentorship and networking opportunities., we support your career
-              growth at every step
+              growth at every step.
             </p>
           </div>
         </div>

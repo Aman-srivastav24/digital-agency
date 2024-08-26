@@ -5,7 +5,7 @@ import { TbBrandWechat } from "react-icons/tb";
 const questionsAndAnswers = [
     {
       question: 'What services do you offer?',
-      answer: 'We offer a variety of services including DAPP Development, Web 3.0 Development, Project Audit, Hacking/RE, and Bot/Script Development.',
+      answer: 'Salesforce Impplementation, Graphic Designing, Web Development, Resourcing/Staff Augmentation, Digital Marketing',
     },
     {
       question: 'What are your office hours?',
