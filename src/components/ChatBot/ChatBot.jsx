@@ -13,7 +13,7 @@ const questionsAndAnswers = [
     },
     {
       question: 'How can I contact you?',
-      answer: 'You can contact us via email at info@cloversal.com or phone at +91 - 8240689427 (India) and +971 - 505852966 (UAE).',
+      answer: 'You can contact us via email at info@cloversal.com or phone at +91 - 77628 68012 (India) and +971 - 505852966 (UAE).',
     },
     // Add more questions and answers here
   ];
