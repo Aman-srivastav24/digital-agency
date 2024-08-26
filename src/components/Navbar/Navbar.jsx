@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 export const MenuLinks = [
   {
     id: 1,
-    name: "Training",
+    name: " IT Training",
     link: "/training",
   },
   {
