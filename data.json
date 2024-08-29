@@ -1,3 +1,4 @@
+
 {
     "testimonialData": [
       {
@@ -22,33 +23,51 @@
     "testimonialSuccess": [
       {
         "id": 1,
-        "name": "John D., Salesforce Administrator",
-        "text": "Cloversal’s training program was a game-changer for my career. The comprehensive curriculum and hands-on projects equipped me with the skills Ineeded to excel. Thanks to their expert guidance, I passed my Salesforce certification on the first try!",
-        "img": "https://picsum.photos/101/101"
+        "name": "Joseph Raj",
+        "text": "“I had an excellent experience with Imtiyaz as my Salesforce tutor. His teaching style is highly industry-oriented, which made the learning process incredibly relevant and practical. He provided clear, step-by-step guidance and always emphasized real-world applications of Salesforce concepts.  Thanks to his expert instruction and unwavering support, I was able to secure a job as a Salesforce Admin at Happiest minds. I highly recommend Imtiyaz to anyone looking to advance their Salesforce skills and career prospects”.",
+        "img": "https://play-lh.googleusercontent.com/BUfg5OHrVqtSnqQnPTbCww9-Q425GDflZzUFSNdrsoZJ0E175YotAGVRv6NznwLJqrA"
       },
       {
         "id": 2,
-        "name": "Michael T., Digital Marketing Specialist",
-        "text": "Cloversal’s digital marketing services transformed our online presence. Their strategic approach and expertise in SEO and PPC campaigns significantly boosted our traffic and conversions. We couldn’t be happier with the results.",
-        "img": "https://picsum.photos/102/102"
+        "name": "Imdad Hussain",
+        "text": "I am a driven and ambitious individual who has always aspired to achieve success in my career. However, there was a time when I felt lost and uncertain about the direction I should take. During this challenging period, I was fortunate to receive guidance from Imtiyaz, who I fondly refer to as the protector.Imtiyaz played a pivotal role in my life when I needed it the most. His support and wisdom were invaluable, especially when I was surrounded by confusion and doubt. He not only provided me with clear and practical advice but also showed me the path to success with unwavering encouragement.Thanks to Imtiyaz's mentorship, I was able to navigate through my career challenges and find the right path. Today, I am proud to say that I am thriving in my profession, and I owe a significant part of my success to his guidance. His impact on my life is immeasurable, and I am forever grateful for his presence and support during my journey.",
+        "img": "https://play-lh.googleusercontent.com/BUfg5OHrVqtSnqQnPTbCww9-Q425GDflZzUFSNdrsoZJ0E175YotAGVRv6NznwLJqrA"
       },
       {
         "id": 3,
-        "name": "Sarah M., Business Analyst ",
-        "text": "Joining Cloversal was the best decision I made for my professional growth. The practical training and real-world scenarios provided invaluable experience. The resume-building and interview preparation services helped me secure my dream job!.",
-        "img": "https://picsum.photos/103/103"
+        "name": "Shweta",
+        "text": "I attended for my Salesforce Administration preparation and had an incredible experience!  The classes were engaging, interactive, and focused on understanding concepts rather than just memorization. The mock tests and assessments helped me identify areas for improvement and track my status. Overall, I'm extremely satisfied with my experience.  Thank you to the entire team for helping me achieve my goals!",
+        "img": "https://play-lh.googleusercontent.com/BUfg5OHrVqtSnqQnPTbCww9-Q425GDflZzUFSNdrsoZJ0E175YotAGVRv6NznwLJqrA"
       },
       {
         "id": 4,
-        "name": "Lisa K., Project Manager ",
-        "text": "The Salesforce implementation services from Cloversal were outstanding. Their team’s professionalism and deep knowledge ensured a seamless integration.Our productivity has soared, and we’ve seen a remarkable improvement in our processes..",
-        "img": "https://picsum.photos/103/103"
+        "name": "Sawar Alam ",
+        "text": " My experience with Cloversal Technology's Salesforce Admin training was outstanding. The course was well-structured, blending theory with hands-on practice, and the instructor were both knowledgeable and passionate. The practical exercises were invaluable, giving me the skills and confidence to handle real-world challenges. Thanks to Cloversal, I now have a solid grasp of Salesforce and it helped me a-lot in current Job. I highly recommend them to anyone looking to boost their Salesforce expertise.  .",
+        "img": "https://play-lh.googleusercontent.com/BUfg5OHrVqtSnqQnPTbCww9-Q425GDflZzUFSNdrsoZJ0E175YotAGVRv6NznwLJqrA"
       },
       {
         "id": 5,
-        "name": "David , Web Developer ",
-        "text": "Working with Cloversal’s web development team was a fantastic experience. They delivered a beautifully designed, user-friendly website that exceeded our expectations. Their attention to detail and responsiveness were commendable.",
-        "img": "https://picsum.photos/103/103"
+        "name": "Nasir Ahmed ",
+        "text": " I had the pleasure of completing a Salesforce training course with Mr. Imtiaz Ashraf, and I can confidently say it was an exceptional experience. Mr. Imtiaz Ashraf possesses an impressive depth of knowledge in Salesforce and demonstrated an extraordinary ability to convey complex concepts in a clear and engaging manner. His hands-on approach and real-world examples made learning both practical and enjoyable. Thanks to his expert guidance, I now feel well-equipped to leverage Salesforce effectively in my role. I highly recommend Mr. Imtiaz Ashraf for anyone looking to gain a thorough understanding of Salesforce.  ",
+        "img": "https://play-lh.googleusercontent.com/BUfg5OHrVqtSnqQnPTbCww9-Q425GDflZzUFSNdrsoZJ0E175YotAGVRv6NznwLJqrA"
+      },
+      {
+        "id": 6,
+        "name": "Nasir Ahmed ",
+        "text": " I had the pleasure of completing a Salesforce training course with Mr. Imtiaz Ashraf, and I can confidently say it was an exceptional experience. Mr. Imtiaz Ashraf possesses an impressive depth of knowledge in Salesforce and demonstrated an extraordinary ability to convey complex concepts in a clear and engaging manner. His hands-on approach and real-world examples made learning both practical and enjoyable. Thanks to his expert guidance, I now feel well-equipped to leverage Salesforce effectively in my role. I highly recommend Mr. Imtiaz Ashraf for anyone looking to gain a thorough understanding of Salesforce.  ",
+        "img": "https://play-lh.googleusercontent.com/BUfg5OHrVqtSnqQnPTbCww9-Q425GDflZzUFSNdrsoZJ0E175YotAGVRv6NznwLJqrA"
+      },
+      {
+        "id": 7,
+        "name": "Abzur Tabassum",
+        "text": "I recently completed a Salesforce crash course with Imtiyaz Ashraf, and it was a game-changer. Imtiyaz is a top-notch coach with deep industry knowledge and practical experience. His real-time projects and thorough interview prep were incredibly valuable, and thanks to his guidance, I secured multiple job offers by the end of the course. If you're serious about getting a job in Salesforce, Imtiyaz is the mentor you need.  ",
+        "img": "https://play-lh.googleusercontent.com/BUfg5OHrVqtSnqQnPTbCww9-Q425GDflZzUFSNdrsoZJ0E175YotAGVRv6NznwLJqrA"
+      },
+      {
+        "id": 8,
+        "name": "Salam Zafar",
+        "text": " I recently completed a Salesforce course with Cloversal Technologies, and it was a transformative experience. The course content was well-structured, and the instructor was not only knowledgeable but also deeply committed to ensuring that every student understood the material. I particularly appreciated the practical, hands-on approach, which allowed me to apply what I learned in real-time scenarios. This course has significantly enhanced my skills, enabling me to take on more complex Salesforce projects with confidence. I highly recommend Cloversal Technologies to anyone looking to deepen their understanding of Salesforce and advance their career",
+        "img": "https://play-lh.googleusercontent.com/BUfg5OHrVqtSnqQnPTbCww9-Q425GDflZzUFSNdrsoZJ0E175YotAGVRv6NznwLJqrA"
       }
     ]
   }

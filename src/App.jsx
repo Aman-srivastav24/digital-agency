@@ -28,6 +28,7 @@ import DigitalMarketTraining from "./components/Training/DigitalMarketTraining.j
 import CustomerServiceTraining from "./components/Training/CustomerServiceTraining.jsx";
 import BasicOfComputer from "./components/Training/BasicOfComputer.jsx";
 import GraphicDesignTraining from "./components/Training/GraphicDesignTraining.jsx";
+import AppDev from "./components/Services/AppDev.jsx";
 
 
 
@@ -64,6 +65,7 @@ const App = () => {
             <Route path="/digitalmarketingService" element={<DigitalMarketing />} />
             <Route path="/resourcingService" element={<Resourcing />} />
             <Route path="/graphicdesignService" element={<GraphicDesign />} />
+            <Route path="/appdevService" element={<AppDev/>} />
             {/* training */}
             <Route path="/training" element={<Training />} />
             <Route path="/salesforcetraining" element={<SalesForceTraining />} />

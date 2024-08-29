@@ -6,6 +6,7 @@ import webdev from "../../assets/about/webdev.jpg";
 import resourcing from "../../assets/about/resourcing.jpg";
 import gd from "../../assets/about/gd.jpg";
 import it from "../../assets/about/consultingbg.jpg";
+import appdev from "../../assets/about/data-5606639_1280.jpg"
 
 const services = [
   {
@@ -37,6 +38,12 @@ const services = [
     title: "Graphic Designing",
     description: "Bringing your brand to life with creative and impactful designs. Our graphic designing services deliver visually stunning solutions that communicate your message effectively.",
     link: "/graphicdesignService"
+  },
+  {
+    image: appdev,
+    title: "Mobile App Development",
+    description: "With a passion for delivering exceptional user experiences, we develop apps that are intuitive, engaging, and scalable. Let us help you turn your mobile app vision into a reality.",
+    link: "/appdevService"
   }
 ];
 

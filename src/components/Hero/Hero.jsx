@@ -51,7 +51,9 @@ const Hero = () => {
           </div> */}
 
           {/* Text section */}
+          
           <div className="space-y-5 order-2 sm:order-1 xl:pr-40 ">
+           
             <h1
               data-aos="fade-up"
               className="text-4xl sm:text-5xl text-white font-semibold"
@@ -61,15 +63,13 @@ const Hero = () => {
               <span className="text-primary font-bold">Cloversal</span>
             </h1>
             <p data-aos="fade-up" data-aos-delay="300" className="text-white">
-              Your comprehensive solution for Salesforce training and a suite of
-              professional services designed to propel your career and business
-              forward.
+            Where we redefine the future of Salesforce training and professional services. Our world-class solutions are meticulously crafted to accelerate your career and propel your business to new heights.
             </p>
             <p data-aos="fade-up" data-aos-delay="300" className="text-white">
-              Ready to take the next step in your career? Enroll now and start
-              with a free demo class! Discover why Cloversal is the preferred
-              choice for Salesforce training and a range of professional
-              services.
+            Ready to advance your career? Begin with a complimentary demo class and experience firsthand why Cloversal is the premier choice for top-tier Salesforce training and professional services.
+            </p>
+            <p data-aos="fade-up" data-aos-delay="300" className="text-white">
+            Unlock your potential with our cutting-edge programs and services—designed to equip you with the skills and knowledge to excel in today's dynamic market. Discover the Cloversal difference and take the first step towards a brighter, more successful future.
             </p>
             <Link to="/contact">
               <button

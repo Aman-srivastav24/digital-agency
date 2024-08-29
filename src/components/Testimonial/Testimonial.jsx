@@ -19,9 +19,9 @@ const Testimonial = () => {
   };
   return (
     <>
-      <div className="py-10">
+      {/* <div className="py-10">
         <div className="container ">
-          {/* testimonial section */}
+         
           <div
             data-aos="fade-up"
             className="grid grid-cols-1 max-w-screen-xl mx-auto gap-6"
@@ -44,7 +44,7 @@ const Testimonial = () => {
               {testimonialData.testimonialData.map(({ id, name, text, img }) => {
                 return (
                   <div key={id} className="my-6">
-                    {/* card */}
+                   
                     <div className="flex flex-col sm:flex-row gap-5 md:gap-14 p-4 mx-4 rounded-xl dark:bg-gray-800 bg-gray-600 relative">
                       <img
                         src={img}
@@ -67,7 +67,7 @@ const Testimonial = () => {
             </Slider>
           </div>
         </div>
-      </div>
+      </div> */}
       <TestimonialSuccess/>
     </>
   );

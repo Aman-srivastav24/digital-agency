@@ -13,7 +13,7 @@ const questionsAndAnswers = [
     },
     {
       question: 'How can I contact you?',
-      answer: 'You can contact us via email at info@cloversal.com or phone at +91 - 77628 68012 (India) and +971 - 505852966 (UAE).',
+      answer: 'You can contact us via email at info@cloversal.com or phone at +91 - 8434880379 (India) and +971 - 505852966 (UAE).',
     },
     // Add more questions and answers here
   ];
@@ -51,7 +51,7 @@ const questionsAndAnswers = [
                     {item.question}
                   </button>
                   {selectedQuestion === index && (
-                    <div className="mt-2 self-start p-2 bg-gray-200 dark:bg-gray-9 rounded-lg transition transform duration-300 ease-in-out">
+                    <div className="mt-2 self-start p-2 bg-gray-200 dark:bg-gray-9 dark:text-gray-800 rounded-lg transition transform duration-300 ease-in-out">
                       {item.answer}
                     </div>
                   )}

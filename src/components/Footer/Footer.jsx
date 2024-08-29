@@ -25,7 +25,7 @@ const contact = [
   },
 
   {
-    title: "+91 - 77628 68012",
+    title: "+91 - 8434880379",
     link: "/#blogs",
   },
   {

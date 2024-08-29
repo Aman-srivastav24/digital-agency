@@ -40,7 +40,7 @@ function TestimonialSuccess() {
         <Slider {...settings}>
           {testimonialData.testimonialSuccess.map(testimonial => (
             <div key={testimonial.id} className="mx-auto rounded-md  p-1">
-              <div className="flex flex-col rounded-md bg-gray-600">
+              <div className="flex flex-col rounded-md bg-gray-800">
                 <div className="flex flex-1 flex-col justify-between p-8">
                   <div className="mb-4 flex space-x-2">
                     {Array.from({ length: 5 }).map((_, i) => (

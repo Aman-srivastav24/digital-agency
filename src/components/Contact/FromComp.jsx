@@ -126,6 +126,7 @@ function FromComp() {
               <option value="Salesforce Implementation(Service)">Salesforce Implementation(Service)</option>
               <option value="Website Development(Training)">Website Development(Training)</option>
               <option value="Website Development(Service)">Website Development(Service)</option>
+              <option value="Mobile App Development(Service)">Mobile App Development(Service)</option>
               <option value="Digital marketing(Service)">Digital marketing(Service)</option>
               <option value="Digital marketing(Training)">Digital marketing(Training)</option>
               <option value="Graphic Designing(Service)">Graphic Designing(Service)</option>

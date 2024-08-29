@@ -1,5 +1,5 @@
 import React from "react";
-import about from "../../assets/website/aboutus.png";
+import about from "../../assets/brands/CloversalLogo.jpeg";
 import careersupport from "../../assets/about/careersupport.jpg";
 import certificate from "../../assets/about/certificatepic.png";
 import trainer from "../../assets/about/industryTrainer.jpg";
@@ -12,7 +12,7 @@ function About() {
       <div class="sm:flex items-center max-w-screen-xl">
         <div class="sm:w-1/2 p-10">
           <div class="image object-center text-center" data-aos="fade-up">
-            <img src={about} />
+            <img src={about} className="w-[400px] h-[400px]  rounded-lg"/>
           </div>
         </div>
         <div class="sm:w-1/2 p-5">
@@ -20,7 +20,7 @@ function About() {
             <h2 class="my-4 font-bold text-3xl  sm:text-4xl ">
               About <span class="text-indigo-600"> The Cloversal</span>
             </h2>
-            <p class="text-gray-700">
+            <p class="text-gray-500">
               Your comprehensive solution for IT training and a suite of
               professional services designed to propel your career and business
               forward.
@@ -30,7 +30,7 @@ function About() {
               <span class="text-indigo-600"> Our Mission </span>
               <img src={mission} alt="cloversal logo" className="w-24 h-24" />
             </h2>
-            <p class="text-gray-700 text-[18px]"> 
+            <p class="text-gray-500 text-[18px]"> 
             At Cloversal, our mission is to provide top-tier training and
                 services that empower individuals and organizations to thrive in
                 today’s competitive landscape. We are dedicated to offering

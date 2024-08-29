@@ -47,7 +47,7 @@ export function ContactPageTwo() {
                     <p className="text-sm font-semibold text-gray-600">{location.address}</p>
                   </div>
                 ))}
-                <p className="w-full text-[15px] font-semibold text-gray-900">Phone - India +91 - 8240689427</p>
+                <p className="w-full text-[15px] font-semibold text-gray-900">Phone - India +91 - 8434880379</p>
                 <p className="w-full text-[15px] font-semibold text-gray-900">Phone - UAE +971 - 505852966</p>
                 <p className="w-full text-[18px] font-bold text-gray-900">For general inquiries, reach out to us at info@cloversal.com.</p>
               </div>
