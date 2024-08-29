@@ -56,7 +56,7 @@ function TestimonialSuccess() {
               data-aos="fade-up"
               className="text-gray-600 dark:text-gray-400 text-sm"
             >
-              Trainee and Customers
+              Trainee
             </p>
           </div>
       <div className=' mt-8' data-aos="fade-up">
