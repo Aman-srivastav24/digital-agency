@@ -45,7 +45,7 @@ function FromComp() {
     <div className="flex items-center justify-center" data-aos="zoom-in">
       <div className="px-2 md:px-12">
         <p className="text-2xl font-bold text-gray-400 md:text-4xl">Request a Call</p>
-        <p className="mt-4 text-lg text-gray-600">
+        <p className="mt-4 text-lg text-gray-700 dark:text-gray-300">
           At Cloversal, your journey to success is our top priority. Whether you have inquiries about our Salesforce training programs, professional services, or want to explore potential collaborations, our dedicated team is here to assist you.
         </p>
         <p>Connect with Cloversal</p>

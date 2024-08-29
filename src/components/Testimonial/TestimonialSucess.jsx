@@ -17,12 +17,35 @@ function TestimonialSuccess() {
     cssEase: "linear",
     pauseOnHover: true,
     pauseOnFocus: true,
+    appendDots: dots => (
+      <div
+        style={{
+          backgroundColor: "#ddd",
+          borderRadius: "10px",
+          padding: "10px",
+          margin:""
+        }}
+      >
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+      </div>
+    ),
+    // customPaging: i => (
+    //   <div
+    //     style={{
+    //       width: "30px",
+    //       color: "blue",
+    //       border: "1px blue solid"
+    //     }}
+    //   >
+    //     {i + 1}
+    //   </div>
+    // )
 
   };
 
   return (
-    <div className='ml-8 mr-8 '  >
-         <div className="pb-12 text-center space-y-3">
+    <div className='  '  >
+         <div className=" text-center space-y-3">
             <h1
               data-aos="fade-up"
               className="text-3xl font-semibold sm:text-3xl text-violet-950 dark:text-primary"
@@ -36,7 +59,7 @@ function TestimonialSuccess() {
               Trainee and Customers
             </p>
           </div>
-      <div className='mt-4 mb-12 ml-4 mr-4  ' data-aos="fade-up">
+      <div className=' mt-8' data-aos="fade-up">
         <Slider {...settings}>
           {testimonialData.testimonialSuccess.map(testimonial => (
             <div key={testimonial.id} className="mx-auto rounded-md  p-1">

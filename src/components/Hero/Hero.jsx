@@ -31,7 +31,7 @@ const Hero = () => {
           className="h-[620px] w-full object-cover "
         >
           <source src={backgroundVideo} type="video/mp4" />
-          Your browser does not support the video tag.
+        
         </video>
       </div>
           {/* Image section */}
@@ -68,9 +68,7 @@ const Hero = () => {
             <p data-aos="fade-up" data-aos-delay="300" className="text-white">
             Ready to advance your career? Begin with a complimentary demo class and experience firsthand why Cloversal is the premier choice for top-tier Salesforce training and professional services.
             </p>
-            <p data-aos="fade-up" data-aos-delay="300" className="text-white">
-            Unlock your potential with our cutting-edge programs and services—designed to equip you with the skills and knowledge to excel in today's dynamic market. Discover the Cloversal difference and take the first step towards a brighter, more successful future.
-            </p>
+          
             <Link to="/contact">
               <button
                 data-aos="fade-up"
