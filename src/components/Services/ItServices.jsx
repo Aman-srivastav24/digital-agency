@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import implementation from "../../assets/website/Salesforce-Implementation-services.png";
+import implementation from "../../assets/about/Salesforceeimplementation.jpg";
 import dm from "../../assets/about/dm.jpg";
 import webdev from "../../assets/about/webdev.jpg";
 import resourcing from "../../assets/about/resourcing.jpg";
 import gd from "../../assets/about/gd.jpg";
 import it from "../../assets/about/consultingbg.jpg";
-import appdev from "../../assets/about/data-5606639_1280.jpg"
+import appdev from "../../assets/about/mobiledev.jpg"
 
 const services = [
   {
@@ -72,16 +72,16 @@ function ItServices() {
         </h1>
         <div className="flex flex-wrap -mx-4">
           {services.map((service, index) => (
-            <div key={index} className="w-full max-w-full mb-8 sm:w-1/2 px-4 lg:w-1/3 flex flex-col" data-aos="fade-up" data-aos-delay="500" data-aos-offset="0">
-              <img src={service.image} alt={`${service.title} img`} className="object-cover border rounded-lg object-center w-full h-48" />
+            <div key={index} className="w-full  max-w-full mb-8 sm:w-1/2 px-2 lg:w-1/3 flex flex-col" data-aos="fade-up" data-aos-delay="500" data-aos-offset="0">
+              <img src={service.image} alt={`${service.title} img`} className="object-cover border  object-center w-full h-48" />
               <div className="flex flex-grow">
                 <div className="triangle"></div>
-                <div className="flex flex-col justify-between px-4 py-6 bg-white dark:bg-black border border-gray-400 text">
+                <div className="flex flex-col justify-between px-4 py-6 bg-gradient-to-r from-black to-blue-400 dark:bg-black border-gray-400 text">
                   <div>
-                    <Link to={service.link} className="block mb-4 text-2xl text-gray-500 font-bold leading-tight hover:underline hover:text-blue-600">
+                    <Link to={service.link} className="block mb-4 text-2xl text-gray-300 font-bold leading-tight hover:underline hover:text-blue-600">
                       {service.title}
                     </Link>
-                    <p className="mb-2 text-gray-500">
+                    <p className="mb-2 text-gray-100">
                       {service.description}
                     </p>
                   </div>

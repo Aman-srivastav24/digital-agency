@@ -12,7 +12,7 @@ import ItServices from "../Services/ItServices";
 import WebDev from "../Services/WebDev";
 
 // Import your video file
-import backgroundVideo from '../../assets/brands/6218-189900449_medium.mp4';
+import backgroundVideo from '../../assets/brands/v.mp4';
 
 const Hero = () => {
   return (

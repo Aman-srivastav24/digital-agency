@@ -1,9 +1,9 @@
 import React from "react";
-import about from "../../assets/brands/CloversalLogo.jpeg";
-import careersupport from "../../assets/about/careersupport.jpg";
-import certificate from "../../assets/about/certificatepic.png";
-import trainer from "../../assets/about/industryTrainer.jpg";
-import project from "../../assets/about/realworldproject.jpg";
+import about from "../../assets/update/aboutusLogo.png";
+import careersupport from "../../assets/about/careersupport.jpeg";
+import certificate from "../../assets/update/iso.jpg";
+import trainer from "../../assets/update/Industryleading.jpg";
+import project from "../../assets/update/realworld.png";
 import mission from "../../assets/trainings/leadership.png"
 
 function About() {
@@ -12,7 +12,7 @@ function About() {
       <div class="sm:flex items-center max-w-screen-xl">
         <div class="sm:w-1/2 p-10">
           <div class="image object-center text-center" data-aos="fade-up">
-            <img src={about} className="w-[400px] h-[400px]  rounded-lg"/>
+            <img src={about} className=" rounded-lg"/>
           </div>
         </div>
         <div class="sm:w-1/2 p-5">
@@ -22,7 +22,7 @@ function About() {
             </h2>
             <p class="text-gray-500">
               Your comprehensive solution for IT training and a suite of
-              professional services designed to propel your career and business
+            IT services designed to propel your career and business
               forward.
             </p>
              <div className=" mt-12">
@@ -72,7 +72,7 @@ function About() {
             <img
               src={trainer}
               alt="gem"
-              class="inline-block rounded shadow-lg border border-merino-400"
+              class="inline-block rounded shadow-lg border border-merino-400 h-[350px]"
             />
           </div>
           <div class="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12" data-aos="fade-up">
@@ -93,7 +93,7 @@ function About() {
             <img
               src={project}
               alt="project members"
-              class="inline-block rounded shadow-lg border border-merino-400"
+              class="inline-block rounded shadow-lg border border-merino-400 h-[350px]"
             />
           </div>
           <div class="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12" data-aos="fade-up">
@@ -115,7 +115,7 @@ function About() {
             <img
               src={certificate}
               alt="editor"
-              class="inline-block rounded shadow-lg border border-merino-400"
+              class="inline-block rounded shadow-lg border border-merino-400 h-[350px]"
             />
           </div>
           <div class="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12" data-aos="fade-up">
@@ -137,7 +137,7 @@ function About() {
             <img
               src={careersupport}
               alt="bulk editing"
-              class="inline-block rounded shadow-lg border border-merino-400"
+              class="inline-block rounded shadow-lg border border-merino-400 h-[350px]"
             />
           </div>
           <div class="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12" data-aos="fade-up">
