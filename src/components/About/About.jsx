@@ -4,7 +4,8 @@ import careersupport from "../../assets/about/careersupport.jpeg";
 import certificate from "../../assets/update/iso.jpg";
 import trainer from "../../assets/update/Industryleading.jpg";
 import project from "../../assets/update/realworld.png";
-import mission from "../../assets/trainings/leadership.png"
+import mission from "../../assets/trainings/leadership.png";
+import itservice from "../../assets/about/itservice.jpg"
 
 function About() {
   return (
@@ -154,6 +155,27 @@ function About() {
             </p>
           </div>
         </div>
+       
+       
+       
+        <div class="flex flex-wrap items-center mt-20 text-left  text-center">
+          <div class="w-full md:w-3/5 lg:w-1/2 px-4">
+            <img
+              src={itservice}
+              alt="editor"
+              class="inline-block rounded shadow-lg border border-merino-400 h-[350px]"
+            />
+          </div>
+          <div class="w-full md:w-2/5 lg:w-1/2 px-4 text-center md:text-left lg:pl-12" data-aos="fade-up">
+            <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
+            Leading-Edge Technology Solutions
+            </h3>
+            <p class="sm:text-lg mt-6">
+            Our team of experts leverages the latest technologies to design, develop, and implement tailored solutions that meet the unique needs of our clients. In Web/Mobile App Development, Digital marketing , Graphic Designing and many more services, we empower organizations to thrive in today's fast-paced digital landscape."
+            </p>
+          </div>
+        </div>
+        
       </div>
     </div>
   );

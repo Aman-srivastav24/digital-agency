@@ -75,18 +75,18 @@ function Career() {
       </div>
 
       {/* job openings */}
-      <div>
+      <div className="bg-gray-400 dark:bg-black">
         <ul className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
-          <h1 class="text-2xl md:text-3xl pl-2 my-2 border-l-4 underline font-sans font-bold border-teal-400  dark:text-gray-200">
+          <h1 class="text-2xl md:text-3xl  my-2 border-l-4 underline font-sans font-bold border-teal-400  dark:text-gray-200">
             Job Openings
           </h1>
           {jobPositions.map((job, index) => (
             <li
-              key={index}
+              key={index} 
               className="relative flex flex-col sm:flex-row xl:flex-col items-start"
             >
-              <div className="order-1 sm:ml-6 xl:ml-0">
-                <h3 className="mb-1 text-slate-900 font-semibold">
+              <div className="order-1 sm:ml-6 xl:ml-0 border-2 p-4 rounded-lg h-[250px] border-indigo-500 bg-black shadow-lg">
+                <h3 className="mb-1 text-slate-200 font-semibold">
                   <span
                     className={`mb-1 block text-lg leading-6 text-blue-700`}
                   >
@@ -117,27 +117,27 @@ function Career() {
 
     <div class="w-full">
         <div class="flex flex-col w-full mb-10 sm:flex-row">
-            <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
+            <div class="w-full  mb-10 sm:mb-0 sm:w-1/2">
                 <div class="relative h-full ml-0 mr-0 sm:mr-10">
                     <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg"></span>
-                    <div class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg">
+                    <div class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg bg-gradient-to-r from-black to-blue-400">
                         <div class="flex items-center -mt-1">
-                            <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Dynamic Work Environment</h3>
+                            <h3 class="my-2 ml-3 text-lg font-bold text-gray-100">Dynamic Work Environment</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-indigo-500 uppercase">------------</p>
-                        <p class="mb-2 text-gray-600">Experience a vibrant workplace that fosters creativity, innovation, and collaboration. At Cloversal, every day brings new opportunities to learn and grow.</p>
+                        <p class="mb-2 text-gray-200">Experience a vibrant workplace that fosters creativity, innovation, and collaboration. At Cloversal, every day brings new opportunities to learn and grow.</p>
                     </div>
                 </div>
             </div>
             <div class="w-full sm:w-1/2">
                 <div class="relative h-full ml-0 md:mr-10">
                     <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-purple-500 rounded-lg"></span>
-                    <div class="relative h-full p-5 bg-white border-2 border-purple-500 rounded-lg">
+                    <div class="relative h-full p-5 bg-white border-2 border-purple-500 rounded-lg bg-gradient-to-r from-black to-blue-400">
                         <div class="flex items-center -mt-1">
-                            <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Career Growth Opportunities</h3>
+                            <h3 class="my-2 ml-3 text-lg font-bold text-white">Career Growth Opportunities</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-purple-500 uppercase">------------</p>
-                        <p class="mb-2 text-gray-600">We are committed to your professional development. With access to ongoing training, certifications, and mentorship programs, you’ll have the tools and support you need to advance your career.</p>
+                        <p class="mb-2 text-gray-200">We are committed to your professional development. With access to ongoing training, certifications, and mentorship programs, you’ll have the tools and support you need to advance your career.</p>
                     </div>
                 </div>
             </div>
@@ -146,24 +146,24 @@ function Career() {
             <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
                 <div class="relative h-full ml-0 mr-0 sm:mr-10">
                     <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-400 rounded-lg"></span>
-                    <div class="relative h-full p-5 bg-white border-2 border-blue-400 rounded-lg">
+                    <div class="relative h-full p-5 bg-white border-2 border-blue-400 rounded-lg bg-gradient-to-r from-black to-blue-400">
                         <div class="flex items-center -mt-1">
-                            <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Innovative Projects</h3>
+                            <h3 class="my-2 ml-3 text-lg font-bold text-white">Innovative Projects</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-blue-400 uppercase">------------</p>
-                        <p class="mb-2 text-gray-600">Join a diverse and inclusive team where every voice is heard and valued. We believe that a diverse workforce drives innovation and excellence.</p>
+                        <p class="mb-2 text-gray-200">Join a diverse and inclusive team where every voice is heard and valued. We believe that a diverse workforce drives innovation and excellence.</p>
                     </div>
                 </div>
             </div>
             <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
                 <div class="relative h-full ml-0 mr-0 sm:mr-10">
                     <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-yellow-400 rounded-lg"></span>
-                    <div class="relative h-full p-5 bg-white border-2 border-yellow-400 rounded-lg">
+                    <div class="relative h-full p-5 bg-white border-2 border-yellow-400 rounded-lg bg-gradient-to-r from-black to-blue-400">
                         <div class="flex items-center -mt-1">
-                            <h3 class="my-2 ml-3 text-lg font-bold text-gray-800">Employee Benefits</h3>
+                            <h3 class="my-2 ml-3 text-lg font-bold text-white">Employee Benefits</h3>
                         </div>
                         <p class="mt-3 mb-1 text-xs font-medium text-yellow-400 uppercase">------------</p>
-                        <p class="mb-2 text-gray-600">Enjoy a comprehensive benefits package that includes health insurance, paid time off, retirement plans, and more. We take care of our team so they can focus on what they do best.</p>
+                        <p class="mb-2 text-gray-200">Enjoy a comprehensive benefits package that includes health insurance, paid time off, retirement plans, and more. We take care of our team so they can focus on what they do best.</p>
                     </div>
                 </div>
             </div>
