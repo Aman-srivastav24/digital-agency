@@ -63,7 +63,7 @@ const Hero = () => {
               <span className="text-primary font-bold">Cloversal</span>
             </h1>
             <p data-aos="fade-up" data-aos-delay="300" className="text-white">
-            Where we redefine the future of Salesforce training and professional services. Our world-class solutions are meticulously crafted to accelerate your career and propel your business to new heights.
+            Where we redefine the future of IT Training and Services. Our world-class solutions are meticulously crafted to accelerate your career and propel your business to new heights.
             </p>
             <p data-aos="fade-up" data-aos-delay="300" className="text-white">
             Ready to advance your career? Begin with a complimentary demo class and experience firsthand why Cloversal is the premier choice for top-tier Salesforce training and professional services.

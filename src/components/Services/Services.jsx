@@ -31,7 +31,7 @@ const Services = () => {
                 data-aos-offset="0">
     <img src={trainingCard} alt="Training Card" class="absolute inset-0 h-full w-full object-cover"/>
     <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-gray-900/40"></div>
-    <h3 class="z-10 mt-3 text-3xl font-bold text-white">Training</h3>
+    <h3 class="z-10 mt-3 text-3xl font-bold text-white">IT Training</h3>
     <div class="z-10 gap-y-1 overflow-hidden text-sm leading-6 text-gray-300">"We offer comprehensive training in Salesforce, Website Development, Digital Marketing, Customer Service, Graphics Designing, and Basics of Computer. Enhance your skills and stay ahead in the competitive IT landscape with our expert-led courses."</div>
     <Link to="/training">
               <button

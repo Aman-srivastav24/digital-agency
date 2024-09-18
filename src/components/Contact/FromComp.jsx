@@ -9,6 +9,7 @@ function FromComp() {
     email: '',
     phone: '',
     interest: '',
+    subInterest: '',
     message: ''
   });
 
@@ -25,7 +26,7 @@ function FromComp() {
   };
 
   useEffect(() => {
-    const { firstName, lastName, email, phone, interest, message } = formData;
+    const { firstName, lastName, email, phone, interest, subInterest, message } = formData;
     if (
       firstName &&
       lastName &&
@@ -33,6 +34,7 @@ function FromComp() {
       validateEmail(email) &&
       phone &&
       interest &&
+      subInterest &&
       message
     ) {
       setIsFormValid(true);
@@ -122,22 +124,58 @@ function FromComp() {
               onChange={handleChange}
             >
               <option value="" disabled>Select</option>
-              <option value="Salesforce training">Salesforce Training</option>
-              <option value="Salesforce Implementation(Service)">Salesforce Implementation(Service)</option>
-              <option value="Website Development(Training)">Website Development(Training)</option>
-              <option value="Website Development(Service)">Website Development(Service)</option>
-              <option value="Mobile App Development(Service)">Mobile App Development(Service)</option>
-              <option value="Digital marketing(Service)">Digital marketing(Service)</option>
-              <option value="Digital marketing(Training)">Digital marketing(Training)</option>
-              <option value="Graphic Designing(Service)">Graphic Designing(Service)</option>
-              <option value="Graphic Designing(Training)">Graphic Designing(Training)</option>
-              <option value="Customer Service(Training)">Customer Service(Training)</option>
-              <option value="Staff Resourcing(Service)">Staff Resourcing(Service)</option>
-              <option value="Basic of Computers Training">Basic of Computers Training</option>
-              <option value="Job Enquiry">Job Enquiry</option>
-              <option value="other">Other</option>
+              <option value="Service">IT Service</option>
+              <option value="Training">IT Training</option>
             </select>
           </div>
+
+          {/* Conditionally render the sub-dropdown */}
+          {formData.interest === 'Service' && (
+            <div className="grid w-full items-center gap-1.5">
+              <label className="text-sm font-medium leading-none text-gray-700" htmlFor="subInterest">
+                Service Options
+              </label>
+              <select
+                className="flex h-10 w-full rounded-md border border-gray-300 dark:bg-black px-3 py-2 text-sm placeholder:dark:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+                id="subInterest"
+                name="subInterest"
+                value={formData.subInterest}
+                onChange={handleChange}
+              >
+                <option value="" disabled>Select a Service</option>
+                <option value="Salesforce Implementation">Salesforce Implementation</option>
+                <option value="Website Development)">Website Development</option>
+                <option value="Mobile App Development">Mobile App Development</option>
+                <option value="Digital marketing">Digital Marketing</option>
+                <option value="Graphic Designing">Graphic Designing</option>
+                <option value="Staff Resourcing">Staff Resourcing</option>
+              </select>
+            </div>
+          )}
+
+          {formData.interest === 'Training' && (
+            <div className="grid w-full items-center gap-1.5">
+              <label className="text-sm font-medium leading-none text-gray-700" htmlFor="subInterest">
+                Training Options
+              </label>
+              <select
+                className="flex h-10 w-full rounded-md border border-gray-300 dark:bg-black px-3 py-2 text-sm placeholder:dark:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1"
+                id="subInterest"
+                name="subInterest"
+                value={formData.subInterest}
+                onChange={handleChange}
+              >
+                <option value="" disabled>Select a Training</option>
+                <option value="Salesforce ">Salesforce Training</option>
+                <option value="Website Development">Website Development</option>
+                <option value="Digital marketing">Digital Marketing</option>
+                <option value="Graphic Designing">Graphic Designing</option>
+                <option value="Customer Service">Customer Service</option>
+                <option value="Basic of Computers ">Basics of Computers</option>
+              </select>
+            </div>
+          )}
+
           <div className="grid w-full items-center gap-1.5">
             <label className="text-sm font-medium leading-none text-gray-700" htmlFor="message">
               Message
@@ -150,15 +188,21 @@ function FromComp() {
               cols={3}
               value={formData.message}
               onChange={handleChange}
-            />
+            ></textarea>
           </div>
-          <button
-            type="submit"
-            className={`w-full rounded-md bg-primary px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black ${!isFormValid ? 'opacity-50 cursor-not-allowed' : ''}`}
-            disabled={!isFormValid}
-          >
-            Send Message
-          </button>
+          <div className="grid items-center gap-1.5">
+            <button
+              disabled={!isFormValid}
+              type="submit"
+              className={`w-full rounded-md py-2 px-3 text-center text-white ${
+                isFormValid
+                  ? 'bg-blue-500 hover:bg-blue-600'
+                  : 'cursor-not-allowed bg-gray-500'
+              }`}
+            >
+              Submit
+            </button>
+          </div>
         </form>
       </div>
     </div>

@@ -18,7 +18,7 @@ function Training() {
         <div class="flex flex-col md:flex-row items-center justify-between">
             <div class="md:w-1/2 mb-8 md:mb-0">
                 <h1 class="dark:text-white font-bold text-5xl leading-tight mb-6">Discover Best Training Module For You</h1>
-                <p class="text-white text-xl mb-8"></p>Your premier destination for cutting-edge your gateway to mastering Salesforce with industry-leading training programs designed to elevate your skills and propel your career.
+                <p class="text-white text-xl mb-8"></p>Your premier destination for cutting-edge your gateway to mastering Salesforce, Website Development, Digital Marketing, Customer Service, Graphics Designing, and Basics of Computer with industry-leading training programs designed to elevate your skills and propel your career.
             </div>
             <div class="md:w-1/2">
                 <img src={trainee} alt="Coffee beans"

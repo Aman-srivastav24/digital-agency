@@ -12,44 +12,44 @@ function SalesforceImplementation() {
   const cloud = [
     {
       title: "Sales Cloud",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, dolore similique, molestias, minima neque quisquam eveniet vero ab sint aut dignissimos provident possimus corporis.",
+      desc: "Sales Cloud is a CRM platform that streamlines sales processes, helping businesses manage leads, close deals faster, and boost productivity with automation and analytics. Cloversal Technology optimizes Sales Cloud to enhance sales strategies and maximize revenue.",
       img: salesCloud,
     },
     {
       title: "Service Cloud",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, dolore similique, molestias, minima neque quisquam eveniet vero ab sint aut dignissimos provident possimus corporis.",
+      desc: "Service Cloud enables businesses to deliver superior customer support across channels like email and social media. It offers case management, automation, and knowledge sharing. Cloversal Technology integrates Service Cloud to improve customer experiences and resolve issues quickly.",
       img: servicecloud,
     },
     {
-      title: "Market Cloud",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, dolore similique, molestias, minima neque quisquam eveniet vero ab sint aut dignissimos provident possimus corporis.",
+      title: "Marketing Cloud",
+      desc: "Marketing Cloud provides tools to automate and personalize marketing, supporting multi-channel campaigns, email marketing, and customer journeys. Cloversal Technology customizes Marketing Cloud to meet business goals, enhancing customer engagement and driving loyalty.",
       img: marketcloud,
     },
     {
       title: "Experience Cloud",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, dolore similique, molestias, minima neque quisquam eveniet vero ab sint aut dignissimos provident possimus corporis.",
+      desc: "Experience Cloud enables businesses to create engaging digital experiences for customers, partners, and employees through portals, websites, or apps. Cloversal Technology implements Experience Cloud to foster stronger relationships via tailored digital platforms.",
       img: experiencecloud,
     },
   ];
   const product= [
     {
-      title: "CPQ",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, dolore similique, molestias, minima neque quisquam eveniet vero ab sint aut dignissimos provident possimus corporis.",
+      title: "CPQ (Configure, Price, Quote)",
+      desc: "CPQ automates product configuration, accurate pricing, and quote generation. It simplifies complex sales processes, ensuring quick and error-free quotes. Cloversal Technology implements CPQ to streamline sales cycles, reduce manual tasks, and boost operational efficiency.",
       img: cpq,
     },
     {
-      title: "FSL",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, dolore similique, molestias, minima neque quisquam eveniet vero ab sint aut dignissimos provident possimus corporis.",
+      title: "Field Service Lightning (FSL)",
+      desc: "FSL optimizes mobile workforce management by scheduling, tracking inventory, and offering real-time updates. Ideal for service industries requiring technician dispatch. Cloversal Technology integrates FSL to enhance field operations and improve overall customer satisfaction.",
       img: fsl,
     },
     {
       title: "Einstein",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, dolore similique, molestias, minima neque quisquam eveniet vero ab sint aut dignissimos provident possimus corporis.",
+      desc: "Einstein provides AI-powered insights, recommendations, and automation across Salesforce platforms. It enables smarter decisions, task automation, and improved customer interactions. Cloversal Technology integrates Einstein to deliver personalized, data-driven customer engagement with AI-enhanced capabilities.",
       img: einstein,
     },
     {
       title: "Mulesoft",
-      desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, dolore similique, molestias, minima neque quisquam eveniet vero ab sint aut dignissimos provident possimus corporis.",
+      desc: "MuleSoft connects data, applications, and devices across your enterprise for seamless communication. Cloversal Technology uses MuleSoft to integrate Salesforce with external systems, ensuring smooth data flow and improved operational efficiency across all platforms.",
       img: mulesoft,
     },
   ];
@@ -139,158 +139,7 @@ function SalesforceImplementation() {
             </defs>
           </svg>
         </span>
-        <span class="absolute top-4 left-4 -z-10">
-          <svg
-            width="43"
-            height="56"
-            viewBox="0 0 43 56"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g opacity="0.5">
-              <circle
-                cx="40.9984"
-                cy="1.49626"
-                r="1.49626"
-                transform="rotate(90 40.9984 1.49626)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="27.8304"
-                cy="1.49626"
-                r="1.49626"
-                transform="rotate(90 27.8304 1.49626)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="14.6644"
-                cy="1.49626"
-                r="1.49626"
-                transform="rotate(90 14.6644 1.49626)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="1.49642"
-                cy="1.49626"
-                r="1.49626"
-                transform="rotate(90 1.49642 1.49626)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="40.9984"
-                cy="14.6642"
-                r="1.49626"
-                transform="rotate(90 40.9984 14.6642)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="27.8304"
-                cy="14.6642"
-                r="1.49626"
-                transform="rotate(90 27.8304 14.6642)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="14.6644"
-                cy="14.6642"
-                r="1.49626"
-                transform="rotate(90 14.6644 14.6642)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="1.49642"
-                cy="14.6642"
-                r="1.49626"
-                transform="rotate(90 1.49642 14.6642)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="40.9984"
-                cy="27.8302"
-                r="1.49626"
-                transform="rotate(90 40.9984 27.8302)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="27.8304"
-                cy="27.8302"
-                r="1.49626"
-                transform="rotate(90 27.8304 27.8302)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="14.6644"
-                cy="27.8302"
-                r="1.49626"
-                transform="rotate(90 14.6644 27.8302)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="1.49642"
-                cy="27.8302"
-                r="1.49626"
-                transform="rotate(90 1.49642 27.8302)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="40.9984"
-                cy="40.9982"
-                r="1.49626"
-                transform="rotate(90 40.9984 40.9982)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="27.8304"
-                cy="40.9963"
-                r="1.49626"
-                transform="rotate(90 27.8304 40.9963)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="14.6644"
-                cy="40.9982"
-                r="1.49626"
-                transform="rotate(90 14.6644 40.9982)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="1.49642"
-                cy="40.9963"
-                r="1.49626"
-                transform="rotate(90 1.49642 40.9963)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="40.9984"
-                cy="54.1642"
-                r="1.49626"
-                transform="rotate(90 40.9984 54.1642)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="27.8304"
-                cy="54.1642"
-                r="1.49626"
-                transform="rotate(90 27.8304 54.1642)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="14.6644"
-                cy="54.1642"
-                r="1.49626"
-                transform="rotate(90 14.6644 54.1642)"
-                fill="white"
-              ></circle>
-              <circle
-                cx="1.49642"
-                cy="54.1642"
-                r="1.49626"
-                transform="rotate(90 1.49642 54.1642)"
-                fill="white"
-              ></circle>
-            </g>
-          </svg>
-        </span>
+    
       </section>
       {/* feature of sales forcecloud */}
       <div>
@@ -299,7 +148,7 @@ function SalesforceImplementation() {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4" data-aos="fade-up">
           {cloud.map((cloud) => (
-            <div class="card space-y-3 sm:space-y-4 p-4 border-[1px] border-gray-600 rounded-lg shadow-lg">
+            <div class="card space-y-3 bg-gradient-to-r from-black to-blue-400  sm:space-y-4 p-4 border-[1px] border-gray-600 rounded-lg shadow-lg">
               <div class="relative pt-10 px-10 flex items-center justify-center  transition-transform">
                 <img
                   class="relative w-48 h-48 mb-4 rounded-lg"
@@ -307,10 +156,10 @@ function SalesforceImplementation() {
                   alt=""
                 />
               </div>
-              <div class="relative  px-6 pb-6 mt-6">
-                <span class="block font-semibold text-xl">{cloud.title}</span>
+              <div class="relative  px-2 pb-6 mt-6">
+                <span class="block text-white font-semibold text-xl">{cloud.title}</span>
 
-                <span class="block opacity-75 -mb-1">{cloud.desc}</span>
+                <span class="block text-gray-300 opacity-85 -mb-1">{cloud.desc}</span>
               <Link to="/contact">  <button className="primary-btn mt-4">Enquiry Now</button></Link>
               </div>
             </div>
@@ -324,7 +173,7 @@ function SalesforceImplementation() {
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4" data-aos="fade-up">
           {product.map((product) => (
-            <div class="card space-y-3 sm:space-y-4 p-4 border-[1px] border-gray-600 rounded-lg shadow-lg">
+            <div class="card space-y-3 bg-gradient-to-r from-black to-blue-400 sm:space-y-4 p-4 border-[1px] border-gray-600 rounded-lg shadow-lg">
               <div class="relative pt-10 px-10 flex items-center justify-center  transition-transform">
                 <img
                   class="relative w-48 h-48 mb-4 rounded-lg"
@@ -332,10 +181,10 @@ function SalesforceImplementation() {
                   alt=""
                 />
               </div>
-              <div class="relative  px-6 pb-6 mt-6">
-                <span class="block font-semibold text-xl">{product.title}</span>
+              <div class="relative  px-2 pb-6 mt-6">
+                <span class="block text-white font-semibold text-xl">{product.title}</span>
 
-                <span class="block opacity-75 -mb-1">{product.desc}</span>
+                <span class="block text-gray-300 opacity-85 -mb-1">{product.desc}</span>
                <Link to="/contact"><button className="primary-btn mt-4">Enquiry Now</button></Link> 
               </div>
             </div>

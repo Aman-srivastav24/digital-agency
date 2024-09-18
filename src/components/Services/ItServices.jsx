@@ -58,7 +58,7 @@ function ItServices() {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <h1 className="dark:text-white font-bold text-5xl leading-tight mb-6">Innovative IT Solutions, Exceptional Results</h1>
-              <p className="dark:text-gray-300 text-gray-900 text-xl mb-8">Crafting responsive, user-friendly websites tailored to your business needs. Our web development services ensure a seamless online presence, exceptional user experience, and robust performance to drive your success.</p>
+              <p className="dark:text-gray-300 text-gray-900 text-xl mb-8">Crafting responsive, user-friendly websites tailored to your business needs. Our services include web development, graphic design, digital marketing, Salesforce implementation, and app development to ensure a seamless online presence, exceptional user experience, and powerful performance that drives your business success.</p>
             </div>
             <div className="md:w-1/2">
               <img src={it} alt="IT Services" className="w-full rounded-lg shadow-lg" />

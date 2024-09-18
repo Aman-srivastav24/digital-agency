@@ -142,7 +142,7 @@ function About() {
           </div>
           <div class="w-full md:w-2/5 lg:w-1/2 px-4 md:order-first text-center md:text-left lg:pr-12" data-aos="fade-up">
             <h3 class="font-bold mt-8 text-xl md:mt-0 sm:text-2xl">
-              Comprehensive Career Support:
+              Comprehensive Career Support
             </h3>
             <p class="sm:text-lg mt-6">
               Tailored resume writing and optimization to showcase your skills
