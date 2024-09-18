@@ -52,7 +52,7 @@ function Career() {
       {/* career landing section */}
       <div class="flex items-center justify-center h-screen dark:bg-gray-900 bg-gray-200 ">
         <div class="container">
-          <div class="bg-white rounded-lg shadow-lg p-5 md:p-20 mx-2 bg-careerPage">
+          <div class="bg-white rounded-lg shadow-lg p-[60px] mx-2 bg-careerPage">
             <div class="text-center">
               <h2 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-300 sm:text-5xl sm:leading-none md:text-6xl">
                 Join <span class="text-indigo-600">Our Team</span>
@@ -76,7 +76,7 @@ function Career() {
 
       {/* job openings */}
       <div className="bg-gray-400 dark:bg-black">
-        <ul className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
+        <ul className="grid grid-cols-1 xl:grid-cols-3 md:gap-y-10 gap-x-6 items-start p-8">
           <h1 class="text-2xl md:text-3xl  my-2 border-l-4 underline font-sans font-bold border-teal-400  dark:text-gray-200">
             Job Openings
           </h1>
